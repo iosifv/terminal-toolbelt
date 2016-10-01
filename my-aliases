@@ -34,3 +34,10 @@ alias git-ignore='git ls-files --others -i --exclude-standard'
 alias ssh-show='cat ~/.ssh/id_rsa.pub'
 alias ssh-copy-'cat ~/.ssh/id_rsa.pub | pbcopy'
 alias ssh-list='ls -al ~/.ssh'
+
+
+
+#===============================================
+######## Other Sources =========================
+#===============================================
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
