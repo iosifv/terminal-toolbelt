@@ -41,3 +41,4 @@ alias ssh-list='ls -al ~/.ssh'
 ######## Other Sources =========================
 #===============================================
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
