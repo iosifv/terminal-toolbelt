@@ -2,6 +2,7 @@
 ######## Run this to resource this file ========
 #===============================================
 alias reload-zsh='source ~/.zshrc'
+alias edit-zsh='source ~/.zshrc'
 
 #===============================================
 ######## PATHS =================================
