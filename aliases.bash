@@ -24,6 +24,7 @@ alias srv-logs='cd /var/log/apache2'
 ######## Git Special ===========================
 #===============================================
 alias checkout-master='git checkout master && git remote update && git pull origin master && git status'
+alias checkout-development='git checkout development && git remote update && git pull origin development && git status'
 alias gl='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color -8'
 alias glall='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color'
 alias git-ignore='git ls-files --others -i --exclude-standard'
