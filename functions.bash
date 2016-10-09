@@ -1,8 +1,11 @@
 #===============================================
 ######## Git ===================================
 #===============================================
-function mega-push {
-  git add . && git commit -m "$2" && git push origin $1
+function push-origin {
+  git add .
+  git commit -m "$2"
+  git push origin $1
+  git status
 }
 
 
