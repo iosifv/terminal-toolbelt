@@ -43,13 +43,3 @@ alias sqlite-open='sqlite3 storage/database.sqlite'
 alias ssh-show='cat ~/.ssh/id_rsa.pub'
 alias ssh-copy-'cat ~/.ssh/id_rsa.pub | pbcopy'
 alias ssh-list='ls -al ~/.ssh'
-
-
-
-#===============================================
-######## Other Sources =========================
-#===============================================
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export PATH="$PATH:$HOME/.composer/vendor/bin"
