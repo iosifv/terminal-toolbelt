@@ -9,14 +9,16 @@ function push-origin {
   git status
 }
  
- # ToDo: find out which branch I am working on and reduce the arguments
+ # Which is the branch I am on right now:
  # git rev-parse --abbrev-ref HEAD
  
-# Example usage: fixup my-branch "my comment"
+ # What's the hash of my last commit
+ # git rev-parse --verify HEAD
+
 function fixup {
   git add .
-  git commit --fixup "$2"
-  git push origin $1
+  git commit --fixup $(git rev-parse --verify HEAD)
+  git push origin $(git rev-parse --abbrev-ref HEAD)
   echo "------"
   git status
 }
