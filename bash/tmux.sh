@@ -1,0 +1,3 @@
+tm () {
+  tmux attach || tmux
+}
