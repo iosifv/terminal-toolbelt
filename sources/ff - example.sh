@@ -116,9 +116,9 @@ d() {
 c() { cat $(fn "$1"); }
 
 # VCS: path to binaries
-GIT_BIN="/opt/boxen/homebrew/bin/git"
-HG_BIN=$(which hg)
-SVN_BIN=$(which svn)
+#GIT_BIN=$(which git)
+#HG_BIN=$(which hg)
+#SVN_BIN=$(which svn)
 
 # VCS short aliases which also respect ff index
 g() { _expand_last_arg_if_number ${GIT_BIN} "$@"; }

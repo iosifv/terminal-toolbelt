@@ -1,6 +1,3 @@
-ALIASES_HOME=$HOME
+CURRENT_DIR_PATH="./www/github/terminal-toolbelt"
 
-source $ALIASES_HOME/colors.sh
-source $ALIASES_HOME/environment.sh
-source $ALIASES_HOME/system.sh
-source $ALIASES_HOME/git.sh
+source $CURRENT_DIR_PATH/source-list.sh

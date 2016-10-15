@@ -9,6 +9,14 @@ This repository consists of my personal bash aliases and functions.
 git clone https://github.com/vighiosif/terminal-toolbelt.git
 ```
 
+##### Set the current directory path
+
+```bash
+cd terminal-toolbelt/
+cp loader.sh_TEMPLATE loader.sh
+nano loader.sh
+```
+
 ##### Open your rc file (may differ)
 
 ```bash
@@ -20,7 +28,5 @@ nano ~/.zshrc
 ##### Add these lines:
 
 ```bash
-source <<full-path-to-this-repo>>/configs.bash
-source <<full-path-to-this-repo>>/aliases.bash
-source <<full-path-to-this-repo>>/functions.bash
+source {{full-path-to-this-repo}}/loader.bash
 ```
