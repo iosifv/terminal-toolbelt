@@ -5,24 +5,13 @@ alias glall='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d 
 alias gignore='git ls-files --others -i --exclude-standard'
 alias gonline='open $(git config --get remote.origin.url)'
 
-# Push all changes to custom branch
-# Ex: gp <<branch-name>> "<<commit-message>>"
+# Push all changes to origin branch named as current branch
+# Ex: gpush "<<commit-message>>"
 #----------------------------
-function gitpush {
+function gpush {
   git add .
   git commit -m "$1"
   git push origin $(git rev-parse --abbrev-ref HEAD) # branch I am on right now
-  echo "------"
-  git status
-}
-
-# Push all changes to master
-# Ex: gpm "<<commit-message>>"
-#----------------------------
-function gpm {
-  git add .
-  git commit -m "$1"
-  git push origin master
   echo "------"
   git status
 }
