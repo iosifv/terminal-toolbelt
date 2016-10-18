@@ -1,3 +1,6 @@
 .DS_Store
 .idea
 .loader.sh
+DS_Store
+/.idea
+loader.sh
