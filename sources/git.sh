@@ -1,4 +1,5 @@
 alias take-master='git checkout master && git remote update && git pull origin master && git status'
+alias take-production='git checkout production && git remote update && git pull origin production && git status'
 alias take-development='git checkout development && git remote update && git pull origin development && git status'
 alias gl='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color -8'
 alias glall='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color'
@@ -15,6 +16,7 @@ function gpush {
   echo "------"
   git status
 }
+
 
 # Push all changes as a fixup to the previous commit
 # Ex: gfixup "<<commit-message>>"
