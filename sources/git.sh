@@ -5,6 +5,7 @@ alias gl='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s 
 alias glall='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color'
 alias gignore='git ls-files --others -i --exclude-standard'
 alias gonline='open $(git config --get remote.origin.url)'
+alias gclean='git branch --merged | grep -v "\*" | grep -v "production" | xargs -n 1 git branch -d'
 
 # Push all changes to origin branch named as current branch
 # Ex: gpush "<<commit-message>>"

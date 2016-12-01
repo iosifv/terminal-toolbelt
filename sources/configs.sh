@@ -1,7 +1,7 @@
 # just reload the profile
 # EXITS THE TERMINAL...
 resource() {
-    echo "Sourcing ~/.zshrc" && . ~/.zshrc;
+    echo "Sourcing ~/.zshrc" && source ~/.zshrc;
 }
 
 alias zsh-edit='nano +100 ~/.zshrc'

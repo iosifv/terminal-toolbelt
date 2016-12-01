@@ -28,3 +28,5 @@ alias path='echo -e ${PATH//:/\\n}' # nice path printing
 # display battery info on your Mac
 # see http://blog.justingreer.com/post/45839440/a-tale-of-two-batteries
 alias battery='ioreg -w0 -l | grep Capacity | cut -d " " -f 17-50'
+alias weather='curl wttr.in/Amsterdam'
+alias weather-cluj='curl wttr.in/Cluj'
