@@ -5,7 +5,7 @@ alias gl='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s 
 alias glall='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color'
 alias gignore='git ls-files --others -i --exclude-standard'
 alias gonline='open $(git config --get remote.origin.url)'
-alias gclean='git branch --merged | grep -v "\*" | grep -v "production" | xargs -n 1 git branch -d'
+alias gclean='git branch --merged | grep -v "\*" | grep -v "production" | grep -v "master" | xargs -n 1 git branch -d'
 alias gpop='git remote update && git pull origin production'
 alias gpom='git remote update && git pull origin master'
 
