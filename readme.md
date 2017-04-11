@@ -77,3 +77,5 @@ https://github.com/tomislav/osx-terminal.app-colors-solarized
 
 Or use the ones located in this repo at /osx-terminal-theme.
 These are tweaked a bit to be used with agnoster, autosugestions and syntax-highlighting
+
+Double click on theme. Go to prefferences and click "default" once you make sure the theme is selected.
