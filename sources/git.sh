@@ -1,13 +1,35 @@
+# List the useful commands
+#----------------------------
+function ghelp {
+  echo "${C_YELLOW}Take's   ${C_RESET}= take-master, take-production, take-development"
+  echo "${C_YELLOW}Pull's   ${C_RESET}= gpom, gpop, gpod"
+  echo "${C_YELLOW}Commit's ${C_RESET}= gpush, gfixup, gc"
+  echo "${C_YELLOW}Log's    ${C_RESET}= gl, glall"
+  echo "${C_YELLOW}Special  ${C_RESET}= gignore, gonline, gclean"
+}
+
+
+# "Take" a certain branch
 alias take-master='git checkout master && git remote update && git pull origin master && git status'
 alias take-production='git checkout production && git remote update && git pull origin production && git status'
 alias take-development='git checkout development && git remote update && git pull origin development && git status'
+
+alias gpom='git remote update && git pull origin master'
+alias gpop='git remote update && git pull origin production'
+alias gpod='git remote update && git pull origin development'
+
+# Git log in a nice format
 alias gl='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color -8'
 alias glall='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color'
+
+# List all git ignored files
 alias gignore='git ls-files --others -i --exclude-standard'
+
+# Open the online location of the repository
 alias gonline='open $(git config --get remote.origin.url)'
-alias gclean='git branch --merged | grep -v "\*" | grep -v "production" | grep -v "master" | xargs -n 1 git branch -d'
-alias gpop='git remote update && git pull origin production'
-alias gpom='git remote update && git pull origin master'
+
+# Delete all branches which are merged and don't exist on origin
+alias gclean='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "production" | grep -v "development" | xargs -n 1 git branch -d'
 
 # Push all changes to origin branch named as current branch
 # Ex: gpush "<<commit-message>>"
@@ -16,7 +38,7 @@ function gpush {
   git add .
   git commit -m "$1"
   git push origin $(git rev-parse --abbrev-ref HEAD) # branch I am on right now
-  echo "------"
+  echo "${C_YELLOW}------${C_RESET}"
   git status
 }
 
@@ -28,7 +50,7 @@ function gfixup {
   git add .
   git commit --fixup $(git rev-parse --verify HEAD)  # hash of the last commit
   git push origin $(git rev-parse --abbrev-ref HEAD) # branch I am on right now
-  echo "------"
+  echo "${C_YELLOW}------${C_RESET}"
   git status
 }
 
