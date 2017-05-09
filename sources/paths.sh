@@ -7,7 +7,7 @@ alias toolbelt='cd ~/www/github/terminal-toolbelt'
 alias cogs='cd ~/www/bitbucket/cogs'
 
 ### OSX ###
-alias edit-hosts='nano /private/etc/hosts'
+alias edit-hosts='sudo nano /private/etc/hosts'
 alias fs-usage='sudo fs_usage'
 
 ### Server ###

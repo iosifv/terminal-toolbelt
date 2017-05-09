@@ -5,7 +5,7 @@ function ghelp {
   echo "${C_YELLOW}Pull's   ${C_RESET}= gpom, gpop, gpod"
   echo "${C_YELLOW}Commit's ${C_RESET}= gpush, gfixup, gc"
   echo "${C_YELLOW}Log's    ${C_RESET}= gl, glall"
-  echo "${C_YELLOW}Special  ${C_RESET}= gignore, gonline, gclean"
+  echo "${C_YELLOW}Special  ${C_RESET}= gignore, gonline, gdelete"
 }
 
 
@@ -29,7 +29,7 @@ alias gignore='git ls-files --others -i --exclude-standard'
 alias gonline='open $(git config --get remote.origin.url)'
 
 # Delete all branches which are merged and don't exist on origin
-alias gclean='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "production" | grep -v "development" | xargs -n 1 git branch -d'
+alias gdelete='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "production" | grep -v "development" | xargs -n 1 git branch -d'
 
 # Push all changes to origin branch named as current branch
 # Ex: gpush "<<commit-message>>"
