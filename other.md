@@ -1,10 +1,14 @@
 soft worth installing:
+```
+brew install multitail   - better 'tail -f'
+brew install ncdu        - better 'du -s *'
 
-multitail   - better 'tail -f'
-ncdu        - better 'du -s *'
-
+```
 
 
 fun soft:
-cowsay
-loltext
+```
+brew install cowsay
+brew install loltext
+
+```
