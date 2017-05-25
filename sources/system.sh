@@ -1,4 +1,6 @@
 alias dus='du -sckxh * | sort -nr'
+alias dir-sizes='du -skxh * && echo "\nTotal:" && du -skxh'
+alias dir-info='ncdu'
 
 # turn hidden files on/off in Finder
 #----------------------------

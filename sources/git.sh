@@ -12,7 +12,12 @@ function ghelp {
 # "Take" a certain branch
 alias take-master='git checkout master && git remote update && git pull origin master && git status'
 alias take-production='git checkout production && git remote update && git pull origin production && git status'
+alias take-uat='git checkout uat && git remote update && git pull origin uat && git status'
+alias take-staging='git checkout staging && git remote update && git pull origin staging && git status'
+alias take-test='git checkout test && git remote update && git pull origin test && git status'
 alias take-development='git checkout development && git remote update && git pull origin development && git status'
+
+# ToDo: build gtake function
 
 alias gpom='git remote update && git pull origin master'
 alias gpop='git remote update && git pull origin production'
