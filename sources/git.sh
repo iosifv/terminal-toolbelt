@@ -18,6 +18,13 @@ alias take-test='git checkout test && git remote update && git pull origin test 
 alias take-development='git checkout development && git remote update && git pull origin development && git status'
 
 # ToDo: build gtake function
+function gtake {
+    git checkout $1
+    git remote update
+    git pull origin $1
+    echo "${C_YELLOW}------------${C_RESET}"
+    git status
+}
 
 alias gpom='git remote update && git pull origin master'
 alias gpop='git remote update && git pull origin production'
@@ -34,7 +41,7 @@ alias gignore='git ls-files --others -i --exclude-standard'
 alias gonline='open $(git config --get remote.origin.url)'
 
 # Delete all branches which are merged and don't exist on origin
-alias gdelete='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "production" | grep -v "development" | xargs -n 1 git branch -d'
+alias gdelete='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "production" | grep -v "development" | grep -v "test" | grep -v "uat" | xargs -n 1 git branch -d'
 
 # Push all changes to origin branch named as current branch
 # Ex: gpush "<<commit-message>>"
@@ -43,7 +50,7 @@ function gpush {
   git add .
   git commit -m "$1"
   git push origin $(git rev-parse --abbrev-ref HEAD) # branch I am on right now
-  echo "${C_YELLOW}------${C_RESET}"
+  echo "${C_YELLOW}------------${C_RESET}"
   git status
 }
 
@@ -55,7 +62,7 @@ function gfixup {
   git add .
   git commit --fixup $(git rev-parse --verify HEAD)  # hash of the last commit
   git push origin $(git rev-parse --abbrev-ref HEAD) # branch I am on right now
-  echo "${C_YELLOW}------${C_RESET}"
+  echo "${C_YELLOW}------------${C_RESET}"
   git status
 }
 
