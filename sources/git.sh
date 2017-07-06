@@ -47,11 +47,17 @@ alias gdelete='git branch --merged | grep -v "\*" | grep -v "master" | grep -v "
 # Ex: gpush "<<commit-message>>"
 #----------------------------
 function gpush {
+  local CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  echo "${C_YELLOW}Changes found in the following files:${C_RESET}"
+  git status -s
+
+  echo "${C_YELLOW}Pushing all changes to: origin/${C_GREEN}${CURRENT_BRANCH}${C_RESET}"
   git add .
-  git commit -m "$1"
-  git push origin $(git rev-parse --abbrev-ref HEAD) # branch I am on right now
-  echo "${C_YELLOW}------------${C_RESET}"
+  git commit -m "[${CURRENT_BRANCH}] - $1"
+  git push origin $CURRENT_BRANCH
+  echo "${C_YELLOW}====================================="
   git status
+  echo "=====================================${C_RESET}"
 }
 
 

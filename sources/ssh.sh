@@ -12,4 +12,5 @@ alias ssh-list='ls -al ~/.ssh'
 # ssh-copy-id ioto@173.236.227.58
 alias sshto-dreamhost='ssh ioto@173.236.227.58'
 alias sshto-ysa='ssh forge@178.62.1.65'
+alias sshto-s2a='ssh forge@178.62.8.108'
 alias sshto-oddprophet='ssh forge@46.101.62.66'

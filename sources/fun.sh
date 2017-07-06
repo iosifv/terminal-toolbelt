@@ -10,4 +10,4 @@ alias weather-cluj='curl wttr.in/Cluj'
 alias star-wars='telnet towel.blinkenlights.nl'
 
 # This needs pimpification
-alias quote='fortune | cowsay | lolcat'
+alias quote='fortune | cowsay -f tux | lolcat -a'

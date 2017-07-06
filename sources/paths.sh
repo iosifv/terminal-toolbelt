@@ -7,6 +7,7 @@ alias start-homestead='cd ~/www/soft/Homestead/ && vagrant reload --provision'
 alias woooba='cd ~/www/woooba'
 alias ysa='cd ~/www/woooba/clients/ysa'
 alias s2a='cd ~/www/woooba/clients/s2a'
+alias iosifv='cd ~/www/bitbucket/iosifv'
 
 alias toolbelt='cd ~/www/github/terminal-toolbelt'
 alias cogs='cd ~/www/bitbucket/cogs'
