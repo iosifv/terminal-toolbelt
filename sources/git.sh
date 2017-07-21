@@ -8,16 +8,6 @@ function ghelp {
   echo "${C_YELLOW}Special  ${C_RESET}= gignore, gonline, gdelete"
 }
 
-
-# "Take" a certain branch
-alias take-master='git checkout master && git remote update && git pull origin master && git status'
-alias take-production='git checkout production && git remote update && git pull origin production && git status'
-alias take-uat='git checkout uat && git remote update && git pull origin uat && git status'
-alias take-staging='git checkout staging && git remote update && git pull origin staging && git status'
-alias take-test='git checkout test && git remote update && git pull origin test && git status'
-alias take-development='git checkout development && git remote update && git pull origin development && git status'
-
-# ToDo: build gtake function
 function gtake {
     git checkout $1
     git remote update
@@ -54,6 +44,21 @@ function gpush {
 
   echo "${C_YELLOW}Pushing all changes to: origin/${C_GREEN}${CURRENT_BRANCH}${C_RESET}"
   git add .
+  git commit -m "[${CURRENT_BRANCH}] - $1"
+  git push origin $CURRENT_BRANCH
+
+  echo "${C_YELLOW}====================================="
+  git status
+  echo "=====================================${C_RESET}"
+}
+
+function gcommit {
+  local CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+
+  echo "${C_YELLOW}Changes found in the following files:${C_RESET}"
+  git status -s
+
+  echo "${C_YELLOW}Pushing all staged files to: origin/${C_GREEN}${CURRENT_BRANCH}${C_RESET}"
   git commit -m "[${CURRENT_BRANCH}] - $1"
   git push origin $CURRENT_BRANCH
 

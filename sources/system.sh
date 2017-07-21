@@ -18,13 +18,14 @@ function delete {
   rm -rfv $1
 }
 
-# change habits
+# Change habits
 #alias sudo="echo '${C_YELLOW}Are you sure?${C_RESET}'"
 
 
-# rarely used ones, but cool
+# Rarely used ones, but cool
 alias epoch='date +"%s"'
 alias version='echo "bash version: ${BASH_VERSION}"'
 alias path='echo -e ${PATH//:/\\n}' # nice path printing
 
-
+# Misc
+alias kill-ds-store='find . -name "*.DS_Store" -type f -delete'
