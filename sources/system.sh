@@ -29,3 +29,7 @@ alias path='echo -e ${PATH//:/\\n}' # nice path printing
 
 # Misc
 alias kill-ds-store='find . -name "*.DS_Store" -type f -delete'
+
+### OSX ###
+alias edit-hosts='sudo nano /private/etc/hosts'
+alias fs-usage='sudo fs_usage'
