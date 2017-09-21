@@ -1,9 +1,9 @@
 # List the useful commands
 #----------------------------
 function ghelp {
-  echo "${C_YELLOW}Take's   ${C_RESET}= take-master, take-production, take-development"
+  echo "${C_YELLOW}Take's   ${C_RESET}= gtake"
   echo "${C_YELLOW}Pull's   ${C_RESET}= gpom, gpop, gpod"
-  echo "${C_YELLOW}Commit's ${C_RESET}= gpush, gfixup, gc"
+  echo "${C_YELLOW}Commit's ${C_RESET}= gpush, gcommit gfixup, gc"
   echo "${C_YELLOW}Log's    ${C_RESET}= gl, glall"
   echo "${C_YELLOW}Special  ${C_RESET}= gignore, gonline, gdelete"
 }
