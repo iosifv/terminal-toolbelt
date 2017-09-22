@@ -33,8 +33,11 @@ alias gonline='open $(git config --get remote.origin.url)'
 
 # Delete all branches which are merged and don't exist on origin
 function gdelete {
+    echo "${C_YELLOW}====== Pruning remote branches ======${C_RESET}"
+    git remote prune origin
+    echo "${C_YELLOW}====== Deleting local branches ======${C_RESET}"
     git branch --merged | grep -v "\*" | grep -v "master" | grep -v "production" | grep -v "development" | grep -v "test" | grep -v "uat" | xargs -n 1 git branch -d
-    echo "${C_YELLOW}=====================================${C_RESET}"
+    echo "${C_YELLOW}====== Status of local/remotes ======${C_RESET}"
     git branch -va
 }
 
