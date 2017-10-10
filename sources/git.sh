@@ -9,10 +9,10 @@ function ghelp {
 }
 
 function gtake {
-    git checkout $1
-    git remote update
-    git pull origin $1
-    echo "${C_YELLOW}====================================="
+  git checkout $1
+  git remote update
+  git pull origin $1
+  echo "${C_YELLOW}====================================="
   git status
   echo "=====================================${C_RESET}"
 }
@@ -29,7 +29,19 @@ alias glall='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d 
 alias gignore='git ls-files --others -i --exclude-standard'
 
 # Open the online location of the repository
-alias gonline='open $(git config --get remote.origin.url)'
+function gonline {
+    local REMOTE_URL=$(git config --get remote.origin.url)
+
+    # REMOTE_URL = git@bitbucket.org:{OWNER}/{PROJECT}.git
+    # HTTP_URL   = http://bitbucket.org/{OWNER}/{PROJECT}
+
+    local HTTP_URL=${REMOTE_URL/\:/\/}
+    HTTP_URL=${HTTP_URL/git@/}
+    HTTP_URL=${HTTP_URL/.git/}
+    HTTP_URL=http://${HTTP_URL}
+    echo Opening ${HTTP_URL}
+    open ${HTTP_URL}
+}
 
 # Delete all branches which are merged and don't exist on origin
 function gdelete {
