@@ -29,6 +29,7 @@ alias glall='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d 
 alias gignore='git ls-files --others -i --exclude-standard'
 
 # Open the online location of the repository
+# Todo: argument pr/br/cm - to go to certain bitbucket pages automatically
 function gonline {
     local REMOTE_URL=$(git config --get remote.origin.url)
 
@@ -38,7 +39,7 @@ function gonline {
     local HTTP_URL=${REMOTE_URL/\:/\/}
     HTTP_URL=${HTTP_URL/git@/}
     HTTP_URL=${HTTP_URL/.git/}
-    HTTP_URL=http://${HTTP_URL}
+    HTTP_URL=http://${HTTP_URL}/commits/all
     echo Opening ${HTTP_URL}
     open ${HTTP_URL}
 }
