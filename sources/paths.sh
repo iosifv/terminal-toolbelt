@@ -9,7 +9,7 @@ alias iosifv='cd ~/www/bitbucket/iosifv'
 alias toolbelt='cd ~/www/github/terminal-toolbelt'
 
 ### System stuff ###
-alias homestead='cd ~/www/soft/Homestead'
+#alias homestead='cd ~/www/soft/Homestead'
 alias start-homestead='cd ~/www/soft/Homestead/ && vagrant reload --provision'
 
 ### Woooba projects ###
