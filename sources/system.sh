@@ -32,6 +32,11 @@ function php-switch {
   echo "${C_RESET}"
 }
 
+# Read markdown files nicely
+markdown () {
+  pandoc $1 | lynx -stdin
+}
+
 # Change habits
 #alias sudo="echo '${C_YELLOW}Are you sure?${C_RESET}'"
 
