@@ -88,7 +88,13 @@ function gcommit {
   echo "=====================================${C_RESET}"
 }
 
-
+function gbranch {
+  git checkout -b $1
+  git push --set-upstream origin $1
+  echo "${C_YELLOW}====================================="
+  git status
+  echo "=====================================${C_RESET}"
+}
 
 
 # Push all changes as a fixup to the previous commit
