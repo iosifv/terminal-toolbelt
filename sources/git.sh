@@ -89,6 +89,8 @@ function gcommit {
 }
 
 
+
+
 # Push all changes as a fixup to the previous commit
 # Ex: gfixup "<<commit-message>>"
 #----------------------------

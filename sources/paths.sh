@@ -8,6 +8,10 @@ alias cogs='cd ~/www/bitbucket/cogs'
 alias iosifv='cd ~/www/bitbucket/iosifv'
 alias toolbelt='cd ~/www/github/terminal-toolbelt'
 
+### Personal soft ###
+alias etn-daemon='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Cryptocurrency/💰Wallets/Electroneum/macOS-x64-0.11.0.0/electroneumd;'
+alias etn-wallet='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Cryptocurrency/💰Wallets/Electroneum/macOS-x64-0.11.0.0/electroneum-wallet-cli --wallet-file hidden_hash_electroneum;'
+
 ### System stuff ###
 #alias homestead='cd ~/www/soft/Homestead'
 alias start-homestead='cd ~/www/soft/Homestead/ && vagrant reload --provision'
