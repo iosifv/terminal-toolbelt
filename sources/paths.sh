@@ -9,8 +9,8 @@ alias iosifv='cd ~/www/bitbucket/iosifv'
 alias toolbelt='cd ~/www/github/terminal-toolbelt'
 
 ### Personal soft ###
-alias etn-daemon='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Cryptocurrency/💰Wallets/Electroneum/macOS-x64-0.11.0.0/electroneumd;'
-alias etn-wallet='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Cryptocurrency/💰Wallets/Electroneum/macOS-x64-0.11.0.0/electroneum-wallet-cli --wallet-file hidden_hash_electroneum;'
+alias etn-daemon='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Cryptocurrency/💰Wallets/\(ETN\)\ Electroneum/macOS-x64-0.11.0.0/electroneumd;'
+alias etn-wallet='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Cryptocurrency/💰Wallets/\(ETN\)\ Electroneum/macOS-x64-0.11.0.0/electroneum-wallet-cli --wallet-file hidden_hash_electroneum;'
 
 ### System stuff ###
 #alias homestead='cd ~/www/soft/Homestead'
@@ -23,8 +23,6 @@ alias woooba='cd ~/www/woooba'
 alias clients='cd ~/www/woooba/clients'
 alias oddprophet='cd ~/www/woooba/clients/odd-prophet-api'
 alias ysa='cd ~/www/woooba/clients/ysa'
-alias s2a='cd ~/www/woooba/clients/s2a'
-alias doctors='cd ~/www/woooba/clients/doctors'
 alias teps='cd ~/www/woooba/clients/teps'
 
 ### Server ###

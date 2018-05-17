@@ -7,6 +7,11 @@ alias dir-info='ncdu'
 function hiddenOn() { defaults write com.apple.Finder AppleShowAllFiles YES ; }
 function hiddenOff() { defaults write com.apple.Finder AppleShowAllFiles NO ; }
 
+# turn shadows for windows on/off in OSX
+#----------------------------
+function shadowOn() { defaults write com.apple.screencapture disable-shadow -bool true; }
+function shadowOff() { defaults write com.apple.screencapture disable-shadow -bool false; }
+
 # Copy/Move files or directories with verbose output
 #----------------------------
 function copy {  ditto -V $1 $2  }
