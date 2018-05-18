@@ -9,7 +9,8 @@ alias ssh-list='ls -al ~/.ssh'
 
 # Personal
 alias sshto-dreamhost='ssh ioto@173.236.227.58'
-alias sshto-vultr='ssh forge@104.238.172.170'
+alias sshto-vultr='ssh ioto@104.238.172.170'
+alias sshto-vultroot='ssh root@104.238.172.170'
 alias sshto-tpersona='ssh root@108.61.196.229'
 alias sshto-persona='ssh root@108.61.196.229'
 
