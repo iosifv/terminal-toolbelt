@@ -1,4 +1,4 @@
-SOURCES_PATH=$CURRENT_DIR_PATH/sources
+SOURCES_PATH=$DIR_PATH_FOR_TOOLBELT/sources
 
 # Need to be first
 source $SOURCES_PATH/configs.sh
