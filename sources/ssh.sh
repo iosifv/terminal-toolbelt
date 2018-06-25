@@ -34,18 +34,9 @@ alias sshto-teps-prod='ssh forge@138.68.171.213'
 # default user/pass is miner/myEmail for SimpleMiner
 # default user/pass is user/1 for HiveOS
 
-alias sshto-miner1='ssh miner@192.168.1.111'
-alias sshto-miner3='ssh miner@192.168.1.142'
-alias sshto-miner4='ssh miner@192.168.1.146'
-alias sshto-miner5='ssh miner@192.168.1.145'
-alias sshto-miner6='ssh miner@192.168.1.134'
-alias sshto-miner7='ssh miner@192.168.1.116'
-alias sshto-miner8='ssh miner@192.168.1.119'
-
-alias sshto-rig1='ssh user@192.168.1.111'
-alias sshto-rig3='ssh user@192.168.1.142'
-alias sshto-rig4='ssh user@192.168.1.146'
-alias sshto-rig5='ssh user@192.168.1.145'
+alias sshto-rig2='ssh user@192.168.1.146'
+alias sshto-rig3='ssh user@192.168.1.119'
+alias sshto-rig4='ssh user@192.168.1.111'
 alias sshto-rig6='ssh user@192.168.1.134'
-alias sshto-rig7='ssh user@192.168.1.116'
-alias sshto-rig8='ssh user@192.168.1.119'
+alias sshto-rig7='ssh user@192.168.1.142'
+alias sshto-rig8='ssh user@192.168.1.145'
