@@ -2,6 +2,3 @@
 .idea
 DS_Store
 /.idea
-loader.sh
-loader-linux.sh
-loader-win.sh
