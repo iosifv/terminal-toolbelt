@@ -14,4 +14,6 @@ source $SOURCES_PATH/system.sh
 source $SOURCES_PATH/tmux.sh
 source $SOURCES_PATH/ssh.sh
 source $SOURCES_PATH/fun.sh
-source $SOURCES_PATH/ubuntu.sh
+source $SOURCES_PATH/os-ubuntu-server.sh
+source $SOURCES_PATH/os-ubuntu.sh
+source $SOURCES_PATH/os-osx.sh
