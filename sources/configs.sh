@@ -1,14 +1,17 @@
-# just reload the profile
-# EXITS THE TERMINAL...
+#!/usr/bin/env bash
+
+# Useful if I make changes to this repository
+#----------------------------
 resource() {
     echo "Sourcing ~/.zshrc" && source ~/.zshrc;
 }
 
-alias zsh-edit='nano +100 ~/.zshrc'
+alias edit-zsh='nano +100 ~/.zshrc'
 
 export CLICOLOR=true # enable colors on OSX terminal
 
 # Warning! Sends loading errors to /dev/null
+#----------------------------
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2> /dev/null
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2> /dev/null
 

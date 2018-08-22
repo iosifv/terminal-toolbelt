@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 C_RED=$(tput setaf 1)
 C_GREEN=$(tput setaf 2)
 C_YELLOW=$(tput setaf 3)

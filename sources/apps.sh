@@ -5,12 +5,16 @@ function artisan {
   php artisan $1 $2 $3
 }
 
+# Search for a certain route
+#----------------------------
 function lroute {
   php artisan route:list --method=$1
   php artisan route:list --name=$1
   php artisan route:list --path=$1
 }
 
+# Deletes everything cache related
+#----------------------------
 function lcache {
   echo "${C_YELLOW}Removing bootstrap cache...${C_RESET}"
   touch bootstrap/cache/foo.php

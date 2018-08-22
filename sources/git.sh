@@ -73,6 +73,8 @@ function gpush {
   echo "=====================================${C_RESET}"
 }
 
+# Commits everything and sets the branch in the note
+#----------------------------
 function gcommit {
   local CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
@@ -88,6 +90,8 @@ function gcommit {
   echo "=====================================${C_RESET}"
 }
 
+# Creates a new branch and sets upstream
+#----------------------------
 function gbranch {
   git checkout -b $1
   git push --set-upstream origin $1
@@ -117,7 +121,8 @@ function gc {
 }
 
 
-
+# Saved functions from online, I'm not really using these now
+#----------------------------
 function current_git_branch {
   ref=$(git symbolic-ref HEAD 2> /dev/null)
   current_branch=${ref#refs/heads/}
