@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # List the useful commands
 #----------------------------
 function ghelp {

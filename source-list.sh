@@ -17,6 +17,6 @@ source $SOURCES_PATH/paths.sh
 source $SOURCES_PATH/ssh.sh
 source $SOURCES_PATH/fun.sh
 source $SOURCES_PATH/os-general.sh
-source $SOURCES_PATH/os-ubuntu-server.sh
+source $SOURCES_PATH/os-server.sh
 source $SOURCES_PATH/os-ubuntu.sh
-source $SOURCES_PATH/os-osx.sh
+source $SOURCES_PATH/os-mac.sh
