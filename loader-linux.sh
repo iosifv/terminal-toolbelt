@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "."
 
 DIR_PATH_FOR_WWW="/media/iosif/Vault/www"

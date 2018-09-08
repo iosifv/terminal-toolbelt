@@ -4,7 +4,7 @@
 sudo apt install ncdu
 
 # Terminal multiplexer
-sudo install tmux
+sudo apt install tmux
 
 # Great search tool
 sudo apt install ack
