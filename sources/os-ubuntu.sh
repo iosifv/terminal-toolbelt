@@ -10,5 +10,5 @@ alias ubuntu-change-text-size-larger='gsettings set org.gnome.desktop.interface 
 
 # Misc
 #----------------------------
-alias ubuntu-battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep "energy\|voltage\|time to empty\|percentage\|capacity"'
+alias ubuntu-battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep "energy:\|energy-full\|energy-full-design\|energy-rate\|voltage\|time to empty\|percentage\|capacity"'
 
