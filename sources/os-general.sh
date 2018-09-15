@@ -13,6 +13,8 @@ function apt-update {
     sudo apt-get autoremove -y
     echo "${C_YELLOW}==== Running apt-get ${C_GREEN}autoclean${C_YELLOW} ====${C_RESET}"
     sudo apt-get autoclean -y
+    echo "${C_YELLOW}==== Running upgrade_${C_GREEN}oh_my_zsh${C_YELLOW} ====${C_RESET}"
+    upgrade_oh_my_zsh
     echo "${C_YELLOW}==== ${C_GREEN}Done! :)${C_YELLOW} ====${C_RESET}"
 }
 
@@ -71,5 +73,3 @@ tm () {
 alias epoch='date +"%s"'
 alias version='echo "bash version: ${BASH_VERSION}"'
 alias path='echo -e ${PATH//:/\\n}' # nice path printing
-
-

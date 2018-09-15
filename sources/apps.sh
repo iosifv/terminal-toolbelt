@@ -8,7 +8,6 @@ function artisan {
 # Search for a certain route
 #----------------------------
 function lroute {
-  php artisan route:list --method=$1
   php artisan route:list --name=$1
   php artisan route:list --path=$1
 }

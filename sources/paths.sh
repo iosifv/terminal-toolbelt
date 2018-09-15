@@ -21,14 +21,6 @@ alias etn-wallet='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Crypt
 #alias homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead'
 alias start-homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead/ && vagrant reload --provision'
 
-### Woooba projects - DEPRECATED ###
+### Dauntless - Work ###
 #----------------------------
-alias woooba='cd ${DIR_PATH_FOR_WWW}/woooba'
-
-### Woooba client projects - DEPRECATED ###
-#----------------------------
-alias clients='cd ${DIR_PATH_FOR_WWW}/woooba/clients'
-alias oddprophet='cd ${DIR_PATH_FOR_WWW}/woooba/clients/odd-prophet-api'
-alias ysa='cd ${DIR_PATH_FOR_WWW}/woooba/clients/ysa'
-alias teps='cd ${DIR_PATH_FOR_WWW}/woooba/clients/teps'
-
+alias er='cd /home/iosif/er-customer-portal-api'
