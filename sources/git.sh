@@ -9,6 +9,7 @@ function ghelp {
   echo "${C_YELLOW}Special  ${C_RESET}= gignore, gonline, gdelete"
 }
 
+# Git pulls a certain branch
 function gtake {
   git checkout $1
   git remote update
@@ -18,9 +19,11 @@ function gtake {
   echo "=====================================${C_RESET}"
 }
 
+# Git remote update and pulls from origin
 alias gpom='git remote update && git pull origin master'
 alias gpop='git remote update && git pull origin production'
 alias gpod='git remote update && git pull origin development'
+alias  gru='git remote update'
 
 # Git log in a nice format
 alias gl='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color -8'
