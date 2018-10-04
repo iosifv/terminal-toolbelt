@@ -14,7 +14,8 @@ function tm-work {
   session="work"
 
   # exporting NMON to have the default config
-  export NMON="cC"
+  # (l)long cpu averages, (c)cpu, (m)memory, (n)network
+  export NMON="cm"
 
   # set up tmux
   tmux start-server
@@ -28,7 +29,7 @@ function tm-work {
 
   # Split pane 1 horizontal by 75%, start nmon-server
   tmux splitw -h -p 25
-  tmux send-keys "nmon" C-m
+  tmux send-keys "gtop" C-m
 
   # Select pane 2
   tmux selectp -t 2
@@ -40,8 +41,8 @@ function tm-work {
   tmux send-keys "clear;er;gru;gst" C-m
 
   # Pane 3 selected
-  # Split pane 3 vertically by 50% - which is 35% from the total height
-  tmux splitw -v -p 50
+  # Split pane 3 vertically by 20% - which is ~15% from the total height
+  tmux splitw -v -p 20
 
   # select pane 4, start artisan serve
   tmux selectp -t 4
