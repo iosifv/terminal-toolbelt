@@ -1,27 +1,20 @@
 #!/usr/bin/env bash
 
-# PHP 7.2
-sudo apt-get install php7.2
-sudo apt-get install php7.2-xml
-sudo apt-get install php-zip
-sudo apt-get install php-mbstring
-sudo apt-get install php7.2-sqlite3
+# Git Configuration
+git config --global user.email "dev@iosifv.com"
+git config --global user.name "Iosif Vigh"
 
 # PHP 5.6
-sudo apt-get install php5.6
+sudo apt install php5.6
 
-# Node.JS
-sudo apt-get install nodejs
-sudo apt-get install npm
+# PHP 7.2
+sudo apt install php7.2
+sudo apt install php7.2-xml
+sudo apt install php-zip
+sudo apt install php-mbstring
+sudo apt install php7.2-sqlite3
 
-# Python
-sudo apt-get install python3-pip
-sudo apt install python3-dev python3-pip
-sudo apt-get install pip3
-sudo apt-get install pysdm
+# Composer
 
-
-
-# Misc
-sudo apt-get install libc6
-sudo apt-get install symfony
+# Yarn
+sudo apt install yarn

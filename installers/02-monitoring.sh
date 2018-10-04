@@ -3,11 +3,12 @@
 # Top on steroids
 sudo apt-get install htop
 
-# Nmon
-sudo apt-get install nmon && export NMON=mndc
+# Top on mega-steroids
+sudo npm install gtop -g
+sudo npm install vtop -g
 
-# Tail on steroids
-sudo apt-get install multitail
+# Nmon
+sudo apt-get install nmon && export NMON=clmnd
 
 # Install Glances
 # usage: glances, glances -w
@@ -15,6 +16,8 @@ sudo apt-get install python-pip
 sudo pip install glances
 #sudo pip install bottle
 
+# Tail on steroids
+sudo apt-get install multitail
 
 # usage: speedtest
-speedtest-cli
+sudo apt-get install speedtest-cli
