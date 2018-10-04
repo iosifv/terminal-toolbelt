@@ -28,7 +28,7 @@ nano ~/.zshrc
 ##### Add these lines:
 
 ```bash
-source {{full-path-to-this-repo}}/loader.sh
+source {{full-path-to-this-repo}}/loader-{os-that-you-are-using}.sh
 ```
 
 ## Optional
