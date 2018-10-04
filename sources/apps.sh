@@ -8,8 +8,7 @@ function artisan {
 # Search for a certain route
 #----------------------------
 function lroute {
-  php artisan route:list --name=$1
-  php artisan route:list --path=$1
+  php artisan route:list | sed 's/App\\Http\\Controllers//' | sed 's/api\/v1\//\//' | sed 's/api,auth:api,//' | sed -E 's/([[:space:]]+).{1}$//' | sed 's/^(.{10})/x/' | grep $1
 }
 
 # Deletes everything cache related
@@ -35,5 +34,6 @@ alias sqlite-open='sqlite3 database/database.sqlite'
 alias lcache-bck='touch bootstrap/cache/foo.php && rm bootstrap/cache/*.php && composer dump-autoload && composer install && php artisan cache:clear && php artisan view:clear && php artisan clear-compiled && php artisan ide-helper:generate && php artisan ide-helper:meta && php artisan ide-helper:models -W'
 alias tinker='php artisan tinker'
 alias llog='multitail storage/logs/laravel.log'
+alias ltail='llog'
 
 alias art='php artisan'
