@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Tmux
+#----------------------------
+tm () {
+  tmux attach || tmux
+}
+
 alias tm3='tmux new-session \; split-window -h \; split-window -v \; attach'
 
 function tm-stat {

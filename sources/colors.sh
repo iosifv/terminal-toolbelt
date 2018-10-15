@@ -7,4 +7,13 @@ C_RESET=$(tput sgr0)
 C_REVERSE=$(tput rev)
 C_LIGHT_GREY="\[\033[0;37m\]"
 
+# $LINE_RED="5"
+
 # Todo: add more colors && create function to print colored text
+
+# Todo: this is WIP, not working atm.
+function print-title {
+  echo strlen("${1}");
+  echo strlen($1)
+  echo '========================='
+}

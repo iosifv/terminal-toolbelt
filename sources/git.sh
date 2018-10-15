@@ -22,7 +22,7 @@ function gtake {
 # Git remote update and pulls from origin
 alias gpom='git remote update && git pull origin master'
 alias gpop='git remote update && git pull origin production'
-alias gpod='git remote update && git pull origin development'
+alias gpod='git remote update && git pull origin develop'
 alias  gru='git remote update'
 
 # Git log in a nice format

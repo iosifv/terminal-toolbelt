@@ -6,9 +6,19 @@ function artisan {
 }
 
 # Search for a certain route
+# Eg. sed 's/search for text/replace with this/'
 #----------------------------
 function lroute {
-  php artisan route:list | sed 's/App\\Http\\Controllers//' | sed 's/api\/v1\//\//' | sed 's/api,auth:api,//' | sed -E 's/([[:space:]]+).{1}$//' | sed 's/^(.{10})/x/' | grep $1
+  php artisan route:list \
+  | sed 's/App\\Http\\Controllers//' \
+  | sed 's/api\/v1\//\//' \
+  | sed 's/api,auth:api,//' \
+  | sed -E 's/([[:space:]]+).{1}$//' \
+  | sed -E 's/(\|[[:space:]]+\|)/\-\>/' \
+  | sed -E 's/([[:space:]]{16}\|)/\|/' \
+  | sed 's/^(.{10})/x/' \
+  | grep $1 \
+  | grep "$2"
 }
 
 # Deletes everything cache related
