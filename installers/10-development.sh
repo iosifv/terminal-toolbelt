@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Nginx
+sudo apt install nginx
+
 # PHP Dependencies
 sudo apt install php7.2-xml
 sudo apt install php-zip

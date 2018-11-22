@@ -21,6 +21,9 @@ sudo apt install python3-dev python3-pip
 sudo apt install pip3
 sudo apt install pysdm
 
+# SnapCraft
+sudo apt install snapd
+
 # Tools
 sudo apt install thefuck
 
