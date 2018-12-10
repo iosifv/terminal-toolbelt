@@ -11,6 +11,7 @@ alias drive='cd ${DIR_PATH_FOR_WWW}/../Drive'
 #----------------------------
 alias iosifv='cd ${DIR_PATH_FOR_WWW}/bitbucket/iosifv'
 alias toolbelt='cd ${DIR_PATH_FOR_WWW}/github/terminal-toolbelt'
+alias installers='cd ${DIR_PATH_FOR_WWW}/github/terminal-toolbelt/installers'
 
 ### Personal soft ###
 #----------------------------
@@ -22,6 +23,8 @@ alias etn-wallet='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Crypt
 #alias homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead'
 alias start-homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead/ && vagrant reload --provision'
 
-### Dauntless - Work ###
+### Skin Analytics - Work ###
 #----------------------------
-alias er='cd /home/iosif/er-customer-portal-api'
+alias sa='cd ~/www/skin-analytics'
+alias ozn='cd ~/www/skin-analytics/skin-platform'
+alias ogp='cd ~/www/skin-analytics/skin-platform-gp'
