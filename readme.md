@@ -31,6 +31,8 @@ nano ~/.zshrc
 source {{full-path-to-this-repo}}/loader-{os-that-you-are-using}.sh
 ```
 
+Comment out the plugins code as it's overwriten in the sources/config.sh file
+
 ## Optional
 
 ##### Install oh-my-zsh
