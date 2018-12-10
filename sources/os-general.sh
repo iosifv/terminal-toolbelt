@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+alias myip='curl -4 icanhazip.com'
+
 # Updates
 function apt-update {
     sudo echo ""
