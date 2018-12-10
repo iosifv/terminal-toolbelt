@@ -17,7 +17,7 @@ sudo apt install npm
 
 # Python
 sudo apt install python3-pip
-sudo apt install python3-dev python3-pip
+sudo apt install python3-dev
 sudo apt install pip3
 sudo apt install pysdm
 
