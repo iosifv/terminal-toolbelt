@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TEMP_WWW="/media/iosif/Vault/www"
+TEMP_WWW="~/www"
 
 
 # ====== Make Directories ========
