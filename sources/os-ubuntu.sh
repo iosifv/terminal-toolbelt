@@ -11,5 +11,5 @@ alias ubuntu-text-larger='gsettings set org.gnome.desktop.interface text-scaling
 # Misc
 #----------------------------
 alias ubuntu-battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep "energy:\|energy-full\|energy-full-design\|energy-rate\|voltage\|time to empty\|percentage\|capacity"'
-alias crlf2lf='find . -name "*.*" | xargs dos2unix'
+alias dos2unix-dir='find . -name "*.*" | xargs dos2unix'
 
