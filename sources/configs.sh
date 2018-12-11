@@ -20,9 +20,11 @@ alias composer="php $DIR_PATH_FOR_BIN/composer.phar"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # EPIC Oh-my-Zsh Plugins
-plugins=(
-  colored-man-pages
-)
+# plugins=(
+#   git
+#   colored-man-pages
+#   zsh-syntax-highlighting
+# )
 
 DEFAULT_USER=iosif
 ZSH_THEME="agnoster"
