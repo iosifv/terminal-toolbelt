@@ -7,7 +7,8 @@ function ssh-make {
 }
 
 alias ssh-show='cat ~/.ssh/id_rsa.pub'
-alias ssh-copy='cat ~/.ssh/id_rsa.pub | pbcopy'
+alias ssh-copy='xclip -selection clipboard < ~/.ssh/id_rsa.pub'
+alias ssh-copy-osx='cat ~/.ssh/id_rsa.pub | pbcopy'
 alias ssh-list='ls -al ~/.ssh'
 
 # SSH to my servers

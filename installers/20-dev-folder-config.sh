@@ -37,7 +37,7 @@ cd ${TEMP_WWW}/playground
 
 # Skin Analytics
 cd ${TEMP_WWW}/skin-analytics
-git clone https://iosif@team.skin-analytics.com/bitbucket/scm/plat/skin-platform.git
+git clone ssh://git@team.skin-analytics.com:7999/plat/skin-platform-gp.git
 
 
 # ====== Project Configs ========

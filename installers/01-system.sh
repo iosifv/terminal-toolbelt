@@ -27,6 +27,7 @@ sudo apt install snapd
 # Tools
 sudo apt install thefuck
 sudo apt install dos2unix
+sudo apt install xclip
 
 # Misc
 sudo apt install libc6
