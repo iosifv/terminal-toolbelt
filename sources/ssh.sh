@@ -23,6 +23,7 @@ alias sshto-persona='ssh root@108.61.196.229'
 
 # Work - SA
 alias sshto-demo-ogp='ssh ubuntu@18.130.144.61'
+alias sshto-stage-ogp-derm='ssh ubuntu@35.177.125.192'
 
 # Mining Farm
 # default user/pass is miner/myEmail for SimpleMiner

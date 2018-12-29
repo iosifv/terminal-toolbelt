@@ -29,3 +29,4 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 DEFAULT_USER=iosif
 ZSH_THEME="agnoster"
 unsetopt correct_all
+unalias grv
