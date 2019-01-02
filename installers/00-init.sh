@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-apt-get update
-apt-get upgrade
-apt-get dist-upgrade
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
 
 ssh-keygen -t rsa -b 4096 && cat ~/.ssh/id_rsa.pub
 cd ~ && mkdir www && cd www/ && mkdir github && cd github/
