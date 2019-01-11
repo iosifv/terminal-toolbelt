@@ -18,21 +18,15 @@ cp loader.sh_TEMPLATE loader.sh
 nano loader.sh
 ```
 
-##### Open your rc file (may differ)
+##### Source the launcer in your rc file (may differ)
 
 ```bash
 nano ~/.bashrc
  - OR -
 nano ~/.zshrc
+ - OR -
+ echo "source {{full-path-to-this-repo}}/loader-{os-that-you-are-using}.sh" >> ~/.zshrc
 ```
-
-##### Add these lines:
-
-```bash
-source {{full-path-to-this-repo}}/loader-{os-that-you-are-using}.sh
-```
-
-Comment out the plugins code as it's overwriten in the sources/config.sh file
 
 ## Optional
 
@@ -41,6 +35,8 @@ https://github.com/robbyrussell/oh-my-zsh
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
+
+Comment out the plugins code in zshrc as it's overwriten in the sources/config.sh file
 
 ##### Install zsh-syntax-highlighting
 https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
@@ -56,6 +52,12 @@ git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggesti
 ```
 
 ##### Install Powerline Fonts
+```bash
+sudo apt-get install fonts-powerline
+```
+
+OR 
+
 https://github.com/powerline/fonts
 ```bash
 git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh

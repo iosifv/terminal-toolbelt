@@ -25,6 +25,8 @@ alias sshto-persona='ssh root@108.61.196.229'
 alias sshto-demo-ogp='ssh ubuntu@18.130.144.61'
 alias sshto-stage-ogp-derm='ssh ubuntu@35.177.125.192'
 
+alias sshto-stage-nat='ssh -i ~/www/keys/ssh-key-derm-staging.pem ubuntu@52.16.55.147'
+
 # Mining Farm
 # default user/pass is miner/myEmail for SimpleMiner
 # default user/pass is user/1 for HiveOS

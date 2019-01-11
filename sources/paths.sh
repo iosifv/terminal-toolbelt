@@ -25,8 +25,8 @@ alias start-homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead/ && vagrant reload 
 
 ### Skin Analytics - Work ###
 #----------------------------
-alias sa='cd ~/www/skin-analytics'
-alias ozn='cd ~/www/skin-analytics/skin-platform'
-alias ogp='cd ~/www/skin-analytics/skin-platform-gp'
+alias sa='cd ${DIR_PATH_FOR_WWW}/skin-analytics'
+alias ozn='cd ${DIR_PATH_FOR_WWW}/skin-analytics/skin-platform'
+alias ogp='cd ${DIR_PATH_FOR_WWW}/skin-analytics/skin-platform-gp'
 alias oznEnergize!='ozn && npm run grunt'
 alias ogpEnergize!='ogp && cd bin-dev && npm run grunt ts:dev && node server.js -e dev'
