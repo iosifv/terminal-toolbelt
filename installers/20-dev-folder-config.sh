@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-TEMP_WWW="~/www"
+TEMP_WWW="/home/iosif/www"
 
 
 # ====== Make Directories ========
 cd ${TEMP_WWW}
-mkdir github
-mkdir bitbucket
-mkdir public
-mkdir playground
-mkdir skin-analytics
+mkdir ${TEMP_WWW}/github
+mkdir ${TEMP_WWW}/bitbucket
+mkdir ${TEMP_WWW}/public
+mkdir ${TEMP_WWW}/playground
+mkdir ${TEMP_WWW}/skin-analytics
 
 
 
