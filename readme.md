@@ -7,7 +7,7 @@ This repository consists of my personal bash aliases and functions.
 ##### Clone this repo
 ```bash
 cd ~ && mkdir www && mkdir www/github && cd www/github/
-git clone https://github.com/iosifv/terminal-toolbelt.git
+git clone git@github.com:iosifv/terminal-toolbelt.git
 ```
 
 ##### Set the current directory path
