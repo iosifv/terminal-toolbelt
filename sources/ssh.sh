@@ -22,9 +22,9 @@ alias sshto-tpersona='ssh root@108.61.196.229'
 alias sshto-persona='ssh root@108.61.196.229'
 
 # Work - SA
-alias sshto-demo-ogp='ssh ubuntu@18.130.144.61'
-alias sshto-stage-ogp-derm='ssh ubuntu@35.177.125.192'
-
+# alias sshto-demo-ogp='ssh ubuntu@18.130.144.61'
+# alias sshto-stage-ogp-derm='ssh ubuntu@35.177.125.192'
+alias sshto-stage-ogp='ssh ubuntu@staging-derm.ogp.skin-analytics.com'
 alias sshto-stage-nat='ssh -i ~/www/keys/ssh-key-derm-staging.pem ubuntu@52.16.55.147'
 
 # Mining Farm
