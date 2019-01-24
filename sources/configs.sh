@@ -3,7 +3,8 @@
 # Useful if I make changes to this repository
 #----------------------------
 resource() {
-    echo "Sourcing ~/.zshrc" && source ~/.zshrc;
+    print-status "Sourcing ~/.zshrc"
+    source ~/.zshrc;
 }
 
 alias edit-zsh='nano +100 ~/.zshrc'

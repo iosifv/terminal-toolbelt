@@ -10,7 +10,9 @@ alias drive='cd ${DIR_PATH_FOR_WWW}/../Drive'
 ### Personal projects ###
 #----------------------------
 alias iosifv='cd ${DIR_PATH_FOR_WWW}/bitbucket/iosifv'
+alias iosifvCode='code ${DIR_PATH_FOR_WWW}/bitbucket/iosifv'
 alias toolbelt='cd ${DIR_PATH_FOR_WWW}/github/terminal-toolbelt'
+alias toolbeltCode='code ${DIR_PATH_FOR_WWW}/github/terminal-toolbelt'
 alias installers='cd ${DIR_PATH_FOR_WWW}/github/terminal-toolbelt/installers'
 
 ### Personal soft ###
@@ -22,11 +24,3 @@ alias etn-wallet='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Crypt
 #----------------------------
 #alias homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead'
 alias start-homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead/ && vagrant reload --provision'
-
-### Skin Analytics - Work ###
-#----------------------------
-alias sa='cd ${DIR_PATH_FOR_WWW}/skin-analytics'
-alias ozn='cd ${DIR_PATH_FOR_WWW}/skin-analytics/skin-platform'
-alias ogp='cd ${DIR_PATH_FOR_WWW}/skin-analytics/skin-platform-gp'
-alias oznEnergize!='ozn && npm run grunt'
-alias ogpEnergize!='ogp && cd bin-dev && npm run grunt ts:dev && node server.js -e dev'
