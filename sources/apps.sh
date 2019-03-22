@@ -4,7 +4,7 @@
 
 alias nrg='npm run grunt'
 
-
+alias edit-php.ini='sudo nano /etc/php/7.2/fpm/php.ini'
 
 #============================
 # Laravel ===================

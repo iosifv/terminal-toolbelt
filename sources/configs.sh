@@ -17,7 +17,8 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2> /dev/null
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2> /dev/null
 source /home/iosif/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2> /dev/null
 
-alias composer="php $DIR_PATH_FOR_BIN/composer.phar"
+# alias composer="php $DIR_PATH_FOR_BIN/composer.phar"
+alias composer="php /usr/local/Cellar/composer/1.8.4/bin/composer"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # EPIC Oh-my-Zsh Plugins

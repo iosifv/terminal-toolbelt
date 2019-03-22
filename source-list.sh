@@ -13,7 +13,8 @@ source $SOURCES_PATH/welcome.sh
 source $SOURCES_PATH/apps.sh
 source $SOURCES_PATH/find.sh
 source $SOURCES_PATH/git.sh
-source $SOURCES_PATH/paths.sh
+source $SOURCES_PATH/personal/paths.sh
+source $SOURCES_PATH/personal/iosifv.com.sh
 source $SOURCES_PATH/ssh.sh
 source $SOURCES_PATH/fun.sh
 source $SOURCES_PATH/tmux.sh
