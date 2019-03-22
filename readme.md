@@ -26,6 +26,7 @@ nano ~/.bashrc
 nano ~/.zshrc
  - OR -
  echo "source {{full-path-to-this-repo}}/loader-{os-that-you-are-using}.sh" >> ~/.zshrc
+ echo "source ~/www/github/terminal-toolbelt/loader-osx.sh" >> ~/.zshrc
 ```
 
 ## Optional
