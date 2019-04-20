@@ -26,3 +26,10 @@ function find-code-in {
 function find-file-types {
     ack --help-types | grep $1
 }
+
+alias search-file='find-file'
+alias search-text='find-text'
+alias search-text-in='find-text-in'
+alias search-code='find-code'
+alias search-code-in='find-code-in'
+alias search-file-types='find-file-types'

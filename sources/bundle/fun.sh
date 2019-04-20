@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-# Super useful weather info because asking Siri or Google is mainstream
-#----------------------------
-alias weather='curl wttr.in/London'
-alias weather-cluj='curl wttr.in/Cluj'
-
 # Legendary Star Wars movie
 #----------------------------
 alias star-wars='telnet towel.blinkenlights.nl'
@@ -66,4 +61,3 @@ function cowyell {
 
     cowsay -f "$cow" $1 | lolcat
 }
-

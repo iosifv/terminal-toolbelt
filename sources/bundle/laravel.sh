@@ -1,17 +1,16 @@
 #============================
-# NodeJs ====================
-#============================
-
-alias nrg='npm run grunt'
-
-alias edit-php.ini='sudo nano /etc/php/7.2/fpm/php.ini'
-
-#============================
 # Laravel ===================
 #============================
+
+# This is needed in Linux environments,
+# OSX works well with just an alias
+#----------------------------
 function artisan {
   php artisan $1 $2 $3
 }
+
+alias art='php artisan'
+alias tinker='php artisan tinker'
 
 # Search for a certain route
 # Eg. sed 's/search for text/replace with this/'
@@ -48,10 +47,12 @@ function lcache {
   php artisan ide-helper:models -W
 }
 
+# Sqlite
+#----------------------------
 alias sqlite-open='sqlite3 database/database.sqlite'
-alias lcache-bck='touch bootstrap/cache/foo.php && rm bootstrap/cache/*.php && composer dump-autoload && composer install && php artisan cache:clear && php artisan view:clear && php artisan clear-compiled && php artisan ide-helper:generate && php artisan ide-helper:meta && php artisan ide-helper:models -W'
-alias tinker='php artisan tinker'
+
+# Logging stuff
+#----------------------------
 alias llog='multitail storage/logs/laravel.log'
 alias ltail='llog'
 
-alias art='php artisan'

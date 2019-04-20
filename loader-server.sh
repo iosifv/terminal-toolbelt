@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-echo "."
 
 OS_NAME="ubuntu"
 DIR_PATH_FOR_WWW="/home/ioto/www"

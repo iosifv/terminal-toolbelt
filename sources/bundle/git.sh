@@ -3,8 +3,8 @@
 #----------------------------
 function ghelp {
   echo "${C_YELLOW}Take's   ${C_RESET}= gtake"
-  echo "${C_YELLOW}Pull's   ${C_RESET}= gpom, gpop, gpod"
-  echo "${C_YELLOW}Commit's ${C_RESET}= gpush, gcommit gfixup, gc"
+  echo "${C_YELLOW}Pull's   ${C_RESET}= gru, gpom, gpop, gpod, gpou"
+  echo "${C_YELLOW}Commit's ${C_RESET}= gpush, gcommit, gfixup, gc"
   echo "${C_YELLOW}Log's    ${C_RESET}= gl, glall"
   echo "${C_YELLOW}Special  ${C_RESET}= gignore, gonline, gdelete"
 }
@@ -20,14 +20,14 @@ function gtake {
 }
 
 # Git remote update and pulls from origin
+alias  gru='git remote update'
 alias gpom='git remote update && git pull origin master'
 alias gpop='git remote update && git pull origin production'
 alias gpod='git remote update && git pull origin develop'
-alias  gru='git remote update'
+alias gpou='git remote update && git pull origin uat'
 
 # Git log in a nice format
-alias gl='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color -8'
-alias glall='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color'
+alias gl='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color'
 
 # List all git ignored files
 alias gignore='git ls-files --others -i --exclude-standard'
