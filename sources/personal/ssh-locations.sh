@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function tb-help-locations {
+    print-status "locations:"
+}
+
 # SSH to my servers
 #----------------------------
 

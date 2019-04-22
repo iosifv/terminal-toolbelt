@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function tb-help-ssh {
+    print-status "ssh:"
+}
+
 # SSH stuff
 #----------------------------
 function ssh-make {

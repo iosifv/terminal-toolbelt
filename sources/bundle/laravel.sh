@@ -2,6 +2,11 @@
 # Laravel ===================
 #============================
 
+
+function tb-help-laravel {
+    print-status "laravel:"
+}
+
 # This is needed in Linux environments,
 # OSX works well with just an alias
 #----------------------------

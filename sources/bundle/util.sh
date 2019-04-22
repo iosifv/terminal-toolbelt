@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function tb-help-util {
+    print-status "util:"
+}
+
 alias show-my-ip='curl -4 icanhazip.com'
 
 # Super useful weather info because asking Siri or Google is mainstream

@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function tb-help-local-paths {
+    print-status "local-paths:"
+}
+
 ### Generic ###
 #----------------------------
 alias www='cd ${DIR_PATH_FOR_WWW}'

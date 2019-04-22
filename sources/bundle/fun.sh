@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function tb-help-fun {
+    print-status "fun:"
+}
+
 # Legendary Star Wars movie
 #----------------------------
 alias star-wars='telnet towel.blinkenlights.nl'

@@ -1,3 +1,8 @@
+
+function tb-help-nginx {
+    print-status "nginx:"
+}
+
 alias nginx-status='sudo systemctl status nginx'
 alias nginx-stop='sudo systemctl stop nginx'
 alias nginx-start='sudo systemctl start nginx'

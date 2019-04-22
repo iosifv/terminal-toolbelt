@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function tb-help-tmux {
+    print-status "tmux:"
+}
+
 # Tmux
 #----------------------------
 tm () {

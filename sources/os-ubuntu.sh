@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function tb-help-ubuntu {
+    print-status "ubuntu:"
+}
+
 # On higher resolution laptops, text is too small for my taste
 #----------------------------
 alias ubuntu-text-smaller='gsettings set org.gnome.desktop.interface text-scaling-factor 0.7'

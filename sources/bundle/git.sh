@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+
+function tb-help-git {
+    print-status "git:"
+}
+
 # List the useful commands
 #----------------------------
 function ghelp {

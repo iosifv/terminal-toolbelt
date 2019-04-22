@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function tb-help-system {
+    print-status "system:"
+}
+
 # Change habits
 #alias sudo="echo '${C_YELLOW}Are you sure?${C_RESET}'"
 

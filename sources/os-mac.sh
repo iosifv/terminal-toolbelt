@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+function tb-help-mac {
+    print-status "mac:"
+}
+
 # Misc
 #----------------------------
 alias mac-kill-ds-store='find . -name "*.DS_Store" -type f -delete'

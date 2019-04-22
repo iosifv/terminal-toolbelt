@@ -2,7 +2,12 @@
 
 function tb-help-fs-find {
     print-status "fs-find:"
-    echo "find-file"
+    echo "[search|find]-file"
+    echo "[search|find]-text"
+    echo "[search|find]-text-in"
+    echo "[search|find]-code"
+    echo "[search|find]-code-in"
+    echo "[search|find]-file-types"
 }
 
 # Finds files. Grep is used just for highlighting

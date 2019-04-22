@@ -3,6 +3,10 @@
 function tb-help-fs-manage {
     print-status "fs-manage:"
     echo "dir-sizes"
+    echo "dir-info"
+    echo "copy"
+    echo "move"
+    echo "delete"
 }
 
 # Files
