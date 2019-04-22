@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+function tb-help-fs-find {
+    print-status "fs-find:"
+    echo "find-file"
+}
+
 # Finds files. Grep is used just for highlighting
 #----------------------------
 function find-file {

@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+function tb-help-fs-manage {
+    print-status "fs-manage:"
+    echo "dir-sizes"
+}
+
 # Files
 #----------------------------
 function dir-sizes {

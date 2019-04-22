@@ -8,6 +8,7 @@ SOURCES_PATH=$DIR_PATH_FOR_TOOLBELT/sources
 source $SOURCES_PATH/alpha-configs.sh
 source $SOURCES_PATH/alpha-display.sh
 source $SOURCES_PATH/alpha-welcome.sh
+source $SOURCES_PATH/alpha-help.sh
 
 
 # OS Specific
