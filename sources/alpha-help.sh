@@ -10,7 +10,6 @@ function toolbeltBundleHelp {
     tb-help-php
     tb-help-ssh
     tb-help-system
-    tb-help-tmux
     tb-help-util
 }
 
@@ -20,4 +19,5 @@ function toolbeltHelp {
     tb-help-iosifv
     tb-help-local-paths
     tb-help-locations
+    tb-help-tmux
 }
