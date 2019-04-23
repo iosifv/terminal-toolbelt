@@ -1,6 +1,7 @@
 
 function tb-help-php {
     print-status "php:"
+    echo "php-switch = switches php version takes 2 digits as argument: 56/70/71/72"
 }
 
 #============================

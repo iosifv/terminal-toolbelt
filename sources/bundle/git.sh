@@ -2,6 +2,20 @@
 
 function tb-help-git {
     print-status "git:"
+    echo "gtake   = checkout an existing branch from your local and update it"
+    echo "gpush   = add all, commit and push with a message"
+    echo "gcommit = add all and commit with a message"
+    echo "gdelete = Pruning remote and local branches which are merged. WARNING, USE WITH CAUTION!"
+    echo "gbranch = Creates a new branch from the existing one and syncs it with origin"
+    echo "gfixup  = Creates a force commit. Good to cover up your shitty code"
+    echo "gc      = git commit"
+    echo "gru     = git remote update"
+    echo "gl      = git log with amazing display"
+    echo "gignore = lists all files ignored by gitignore files"
+    echo "gpom    = git pull origin master"
+    echo "gpop    = git pull origin production"
+    echo "gpod    = git pull origin development"
+    echo "gpou    = git pull origin uat"
 }
 
 # List the useful commands
@@ -109,7 +123,6 @@ function gbranch {
   echo "=====================================${C_RESET}"
 }
 
-
 # Push all changes as a fixup to the previous commit
 # Ex: gfixup "<<commit-message>>"
 #----------------------------
@@ -121,7 +134,6 @@ function gfixup {
   git status
   echo "=====================================${C_RESET}"
 }
-
 
 # Ex: gc "<<commit-message>>"
 #----------------------------

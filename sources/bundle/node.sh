@@ -1,6 +1,7 @@
 
 function tb-help-node {
     print-status "node:"
+    echo "nrg = npm run grunt"
 }
 
 #============================

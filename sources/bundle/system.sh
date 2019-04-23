@@ -2,6 +2,10 @@
 
 function tb-help-system {
     print-status "system:"
+    echo "resource   = sources ~/.zshrc (so that you don't need to restart your terminal when modifying)"
+    echo "edit-zsh   = edits ~/.zshrc"
+    echo "apt-update = updates the shit out of your system"
+    echo "path       = lists all system paths"
 }
 
 # Change habits

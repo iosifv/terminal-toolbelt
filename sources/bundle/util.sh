@@ -2,6 +2,9 @@
 
 function tb-help-util {
     print-status "util:"
+    echo "markdown      = takes a file as an argument to simply read .md files"
+    echo "weather       = shows the weather in london"
+    echo "weather-[london|cluj|wroclaw]"
 }
 
 alias show-my-ip='curl -4 icanhazip.com'

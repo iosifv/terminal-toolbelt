@@ -2,11 +2,11 @@
 
 function tb-help-fs-manage {
     print-status "fs-manage:"
-    echo "dir-sizes"
-    echo "dir-info"
-    echo "copy"
-    echo "move"
-    echo "delete"
+    echo "dir-sizes = lists directory sizes [runs du]"
+    echo "dir-info  = interactive directory info [runs ncdu]"
+    echo "copy      = runs ditto verbose"
+    echo "move      = runs ditto verbose"
+    echo "delete    = runs rm -rfv"
 }
 
 # Files

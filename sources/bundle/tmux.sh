@@ -2,6 +2,12 @@
 
 function tb-help-tmux {
     print-status "tmux:"
+    echo "tm"
+    echo "tm3"
+    echo "tm-stat"
+    echo "tm-ozn"
+    echo "tm-iosifv"
+    echo "tm-er"
 }
 
 # Tmux

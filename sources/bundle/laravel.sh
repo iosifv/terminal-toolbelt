@@ -5,6 +5,13 @@
 
 function tb-help-laravel {
     print-status "laravel:"
+    echo "art|artisan "
+    echo "tinker      "
+    echo "lroute      = Searches and lists routes in an app. Takes 2 arguments"
+    echo "lcache      = Deletes all cache in a Laravel app"
+    echo "llog        "
+    echo "ltail       "
+    echo "sqlite-open "
 }
 
 # This is needed in Linux environments,

@@ -2,6 +2,9 @@
 
 function tb-help-fun {
     print-status "fun:"
+    echo "star-wars: displays epic movie in the terminal"
+    echo "quote: show a fortune quote from tux with cowsay"
+    echo "cowyell: overengineered cowsay. Takes a string as argument"
 }
 
 # Legendary Star Wars movie

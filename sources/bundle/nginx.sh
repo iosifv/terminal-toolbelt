@@ -1,6 +1,14 @@
 
 function tb-help-nginx {
     print-status "nginx:"
+    echo "nginx-status"
+    echo "nginx-stop"
+    echo "nginx-start"
+    echo "nginx-restart"
+    echo "nginx-reload"
+    echo "nginx-goto-sites-available"
+    echo "nginx-goto-sites-enabled"
+    echo "nginx-list-sites"
 }
 
 alias nginx-status='sudo systemctl status nginx'

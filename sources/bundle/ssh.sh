@@ -2,6 +2,11 @@
 
 function tb-help-ssh {
     print-status "ssh:"
+    echo "ssh-make        = creates a new ssh key"
+    echo "ssh-show        = lists default ssh key"
+    echo "ssh-copy-ubuntu = copies key to clipboard"
+    echo "ssh-copy-osx    = copies key to clipboard"
+    echo "ssh-list        = lists all keys"
 }
 
 # SSH stuff
