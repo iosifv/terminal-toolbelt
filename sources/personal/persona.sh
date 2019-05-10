@@ -1,13 +1,19 @@
 
 function tb-help-persona {
     print-status "persona:"
-    echo "prs-status"
+    echo "persona-status"
 }
 
 alias persona-status=''
-alias iv-photos='cd /home/ioto/www/iosifv/storage/app/public/photos'
-alias iv-photos-backup='mv /home/ioto/www/iosifv/storage/app/public/photos /home/ioto/www/iosifv/storage/app/public/photos-bck'
-alias iv-photos-pcloud-copy='rclone copy -v pcloud:Fotografii/__iosifv.com /home/ioto/www/iosifv/storage/app/public/photos'
-alias iv-photos-pcloud-replace='rm -rfv /home/ioto/www/iosifv/storage/app/public/photos && rclone copy -v pcloud:Fotografii/__iosifv.com /home/ioto/www/iosifv/storage/app/public/photos'
-alias iv-log='cd /home/ioto/www/iosifv/storage/logs'
-alias iv-log-tail='tail -f /home/ioto/www/iosifv/storage/logs/laravel.log'
+alias persona-list-configs='cat ~/.config/persona-core/mainnet/delegates.json && cat ~/.config/persona-core/mainnet/peers.json && cat ~/.config/persona-core/mainnet/plugins.js'
+
+function persona-list-configs {
+    print-status 'Displaying files from ~/.config/persona-core/mainnet/'
+    echo ''
+    print-status 'delegates.json'
+    cat ~/.config/persona-core/mainnet/delegates.json
+    print-status 'peers.json'
+    cat ~/.config/persona-core/mainnet/peers.json
+    print-status 'plugins.js'
+    cat ~/.config/persona-core/mainnet/plugins.js
+}

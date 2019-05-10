@@ -36,5 +36,6 @@ source $SOURCES_PATH/bundle/util.sh
 # Personal stuff
 #----------------------------
 source $SOURCES_PATH/personal/iosifv.com.sh
+source $SOURCES_PATH/personal/persona.sh
 source $SOURCES_PATH/personal/local-paths.sh
 source $SOURCES_PATH/personal/ssh-locations.sh
