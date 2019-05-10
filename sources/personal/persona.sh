@@ -5,9 +5,8 @@ function tb-help-persona {
 }
 
 alias persona-status=''
-alias persona-list-configs='cat ~/.config/persona-core/mainnet/delegates.json && cat ~/.config/persona-core/mainnet/peers.json && cat ~/.config/persona-core/mainnet/plugins.js'
 
-function persona-list-configs {
+function persona-listConfig-personaCore {
     print-status 'Displaying files from ~/.config/persona-core/mainnet/'
     echo ''
     print-status 'delegates.json'
