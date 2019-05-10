@@ -22,3 +22,10 @@ function toolbeltHelp {
     tb-help-locations
     tb-help-tmux
 }
+
+function toolbeltUpdate {
+    toolbelt
+    git remote update
+    git pull origin master
+    resource
+}
