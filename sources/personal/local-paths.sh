@@ -15,9 +15,10 @@ alias drive='cd ${DIR_PATH_FOR_WWW}/../Drive'
 #----------------------------
 alias iosifv='cd ${DIR_PATH_FOR_WWW}/bitbucket/iosifv'
 alias iosifvCode='code ${DIR_PATH_FOR_WWW}/bitbucket/iosifv'
-alias toolbelt='cd ${DIR_PATH_FOR_WWW}/github/terminal-toolbelt'
-alias toolbeltCode='code ${DIR_PATH_FOR_WWW}/github/terminal-toolbelt'
-alias installers='cd ${DIR_PATH_FOR_WWW}/github/terminal-toolbelt/installers'
+
+alias toolbelt='cd ${DIR_PATH_FOR_TOOLBELT}/github/terminal-toolbelt'
+alias toolbeltCode='code ${DIR_PATH_FOR_TOOLBELT}/github/terminal-toolbelt'
+alias installers='cd ${DIR_PATH_FOR_TOOLBELT}/github/terminal-toolbelt/installers'
 alias silence='cd ${DIR_PATH_FOR_WWW}/bitbucket/silence'
 alias silenceCode='code ${DIR_PATH_FOR_WWW}/bitbucket/silences'
 

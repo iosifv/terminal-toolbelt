@@ -17,6 +17,7 @@ function toolbeltHelp {
     toolbeltBundleHelp
 
     tb-help-iosifv
+    tb-help-persona
     tb-help-local-paths
     tb-help-locations
     tb-help-tmux

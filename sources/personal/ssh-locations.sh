@@ -13,6 +13,8 @@ alias sshto-vultr='ssh ioto@104.238.172.170'
 alias sshto-iosifv='ssh ioto@104.238.172.170'
 alias sshto-vultroot='ssh root@104.238.172.170'
 alias sshto-persona='ssh root@108.61.196.229'
+alias sshto-persona2root='ssh root@45.76.86.153'
+alias sshto-persona2blacksmith='ssh blacksmith@45.76.86.153'
 
 
 # Mining Farm
