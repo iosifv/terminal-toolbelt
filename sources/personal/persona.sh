@@ -1,10 +1,8 @@
 
 function tb-help-persona {
     print-status "persona:"
-    echo "persona-status"
+    echo "persona-list"
 }
-
-alias persona-status=''
 
 function persona-listConfig-personaCore {
     print-status 'Displaying files from ~/.config/persona-core/mainnet/'
@@ -29,3 +27,6 @@ function persona-listConfig-networks {
     print-status '[network.json]'
     cat ~/persona-core/packages/crypto/dist/networks/mainnet/network.json
 }
+
+alias persona-relay-start='~/core-control/ccontrol.sh start relay'
+alias persona-relay-logs='pm2 log persona-relay'
