@@ -40,6 +40,6 @@ function persona-listConfig-tbw {
 alias persona-relay-start='~/core-control/ccontrol.sh start relay'
 
 alias persona-show-databses='psql -l'
-alias persona-payments-manual='python3 ~/tbw/core_v1/tbw.py'
+alias persona-payments-manual='cd ~/tbw/core_v1 && python3 ~/tbw/core_v1/tbw.py'
 alias persona-payments-start='pm2 start ~/tbw/core_v1/apps.json'
 alias persona-payments-stop='pm2 stop ~/tbw/core_v1/apps.json'
