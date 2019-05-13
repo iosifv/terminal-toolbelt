@@ -28,5 +28,18 @@ function persona-listConfig-networks {
     cat ~/persona-core/packages/crypto/dist/networks/mainnet/network.json
 }
 
+function persona-listConfig-tbw {
+    print-status 'Displaying files from cat ~/tbw/config/'
+    echo ''
+    print-status '[config.json]'
+    cat cat ~/tbw/config/config.json
+    print-status '[pool.json]'
+    cat cat ~/tbw/config/pool.json
+}
+
 alias persona-relay-start='~/core-control/ccontrol.sh start relay'
-alias persona-relay-logs='pm2 log persona-relay'
+
+alias persona-show-databses='psql -l'
+alias persona-payments-manual='python3 ~/tbw/core_v1/tbw.py'
+alias persona-payments-start='pm2 start ~/tbw/core_v1/apps.json'
+alias persona-payments-start='pm2 stop ~/tbw/core_v1/apps.json'
