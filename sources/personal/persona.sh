@@ -28,7 +28,7 @@ function persona-listConfig-networks {
     pygmentize -O style=colorful -l json ~/persona-core/packages/crypto/dist/networks/mainnet/network.json
 }
 
-alias persona-listConfig-tbw='pygmentize -O style=colorful -l python ~/core2_tbw/core/config'
+alias persona-listConfig-tbw='pygmentize -O style=colorful -l python ~/core2_tbw/core/config/config'
 alias persona-listConfig-databses='psql -l'
 alias persona-listConfig-secret='pygmentize -O style=colorful -l json ~/.config/persona-core/mainnet/delegates.json'
 
