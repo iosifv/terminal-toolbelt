@@ -32,13 +32,19 @@ fi
 
 if [ ${OS_NAME} = "ubuntu" ]; then
 
-    /usr/bin/screenfetch
+    # Displays cool ubuntu logo and some extra info about the system
+    echo "" && screenfetch
+    echo ""
 
-    echo "SYSTEM DISK USAGE"
-    export TERM=xterm; inxi -D
+    # Displays system disk usage
+    echo "" && export TERM=xterm; inxi -D
+    # echo "" && free -h
 
-    free -h && uptime -p
+    # Shows uptime, obviously
+    echo "" && uptime -p
 
+    # Shows weather
+    echo ""
     ansiweather -l london
     ansiweather -l cluj-napoca
 fi
