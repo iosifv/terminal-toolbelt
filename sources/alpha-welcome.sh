@@ -31,5 +31,15 @@ if [ ${OS_NAME} = "osx" ]; then
 fi
 
 if [ ${OS_NAME} = "ubuntu" ]; then
+
+    /usr/bin/screenfetch
+
+    echo "SYSTEM DISK USAGE"
+    export TERM=xterm; inxi -D
+
     free -h && uptime -p
+
+    ansiweather -l london
+    ansiweather -l cluj-napoca
 fi
+

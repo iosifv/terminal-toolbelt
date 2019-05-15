@@ -24,7 +24,7 @@ function toolbeltHelp {
 }
 
 function toolbeltUpdate {
-    toolbelt
+    cd ${DIR_PATH_FOR_TOOLBELT}
     git remote update
     git pull origin master
     resource
