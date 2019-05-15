@@ -30,6 +30,11 @@ if [ ${OS_NAME} = "osx" ]; then
     echo ""
 fi
 
+# =====================================
+# For Ubuntu server stuff please do this:
+# touch $HOME/.hushlogin
+# =====================================
+
 if [ ${OS_NAME} = "ubuntu" ]; then
 
     # Displays cool ubuntu logo and some extra info about the system

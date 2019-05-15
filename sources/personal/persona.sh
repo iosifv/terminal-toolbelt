@@ -1,7 +1,8 @@
 
 function tb-help-persona {
     print-status "persona:"
-    echo "persona-list"
+    echo "persona-listConfig-[...]"
+    echo "persona-start-[...]"
 }
 
 function persona-listConfig-personaCore {
@@ -34,4 +35,4 @@ alias persona-listConfig-secret='pygmentize -O style=colorful -l json ~/.config/
 
 alias persona-start-relay='~/core-control/ccontrol.sh start relay'
 alias persona-start-forger='~/core-control/ccontrol.sh start forger'
-alias persona-tbw='cd ~/core2_tbw/ && bash tbw.sh'
+alias persona-start-tbw='cd ~/core2_tbw/ && bash tbw.sh'
