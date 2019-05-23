@@ -39,7 +39,7 @@ function net-speed-test {
   wget --output-document=/dev/null -q --show-progress http://speedtest-blr1.digitalocean.com/10mb.test
 }
 
-alias speedometer='speedometer -r eth0'
+alias net-usage-graph='speedometer -r eth0'
 
 # Super useful weather info because asking Siri or Google is mainstream
 #----------------------------
