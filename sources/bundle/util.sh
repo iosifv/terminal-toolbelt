@@ -9,6 +9,16 @@ function tb-help-util {
 
 alias show-my-ip='curl -4 icanhazip.com'
 
+function net-test {
+  print-status "ping:"
+  ping www.google.com -c 2
+  ping www.amazon.co.uk -c 2
+  ping www.amazon.com -c 2
+  wget --output-document=/dev/null http://speedtest.tele2.net/10MB.zip
+}
+
+alias speedometer='speedometer -r eth0'
+
 # Super useful weather info because asking Siri or Google is mainstream
 #----------------------------
 alias weather='curl wttr.in/London'

@@ -36,3 +36,5 @@ alias persona-listConfig-secret='pygmentize -O style=colorful -l json ~/.config/
 alias persona-start-relay='~/core-control/ccontrol.sh start relay'
 alias persona-start-forger='~/core-control/ccontrol.sh start forger'
 alias persona-start-tbw='cd ~/core2_tbw/ && bash tbw.sh'
+
+alias persona-logs-without-relay='pm2 logs "/custom*|pay*|pool*|tbw*|forger*/"'

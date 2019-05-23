@@ -20,6 +20,7 @@ alias sshto-persona-blacksmith='ssh blacksmith@45.76.86.153'
 # default user/pass is miner/myEmail for SimpleMiner
 # default user/pass is user/1 for HiveOS
 #----------------------------
+alias sshto-vega='ssh user@192.168.1.105'
 alias sshto-rig2='ssh user@192.168.1.146'
 alias sshto-rig3='ssh user@192.168.1.119'
 alias sshto-rig4='ssh user@192.168.1.111'
