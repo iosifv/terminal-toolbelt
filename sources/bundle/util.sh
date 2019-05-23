@@ -9,12 +9,34 @@ function tb-help-util {
 
 alias show-my-ip='curl -4 icanhazip.com'
 
-function net-test {
-  print-status "ping:"
+function net-ping-test {
+  print-status "Google.com:"
   ping www.google.com -c 2
+
+  print-status "Amazon.co.uk"
   ping www.amazon.co.uk -c 2
+
+  print-status "Amazon.com"
   ping www.amazon.com -c 2
-  wget --output-document=/dev/null http://speedtest.tele2.net/10MB.zip
+}
+
+function net-speed-test {
+  print-status "New York:"
+  wget --output-document=/dev/null -q --show-progress http://speedtest-nyc1.digitalocean.com/10mb.test
+  print-status "Amsterdam:"
+  wget --output-document=/dev/null -q --show-progress http://speedtest-ams2.digitalocean.com/10mb.test
+  print-status "San Francisco:"
+  wget --output-document=/dev/null -q --show-progress http://speedtest-sfo1.digitalocean.com/10mb.test
+  print-status "Singapore:"
+  wget --output-document=/dev/null -q --show-progress http://speedtest-sgp1.digitalocean.com/10mb.test
+  print-status "London:"
+  wget --output-document=/dev/null -q --show-progress http://speedtest-lon1.digitalocean.com/10mb.test
+  print-status "Frankfurt:"
+  wget --output-document=/dev/null -q --show-progress http://speedtest-fra1.digitalocean.com/10mb.test
+  print-status "Toronto:"
+  wget --output-document=/dev/null -q --show-progress http://speedtest-tor1.digitalocean.com/10mb.test
+  print-status "Bangalore:"
+  wget --output-document=/dev/null -q --show-progress http://speedtest-blr1.digitalocean.com/10mb.test
 }
 
 alias speedometer='speedometer -r eth0'
