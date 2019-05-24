@@ -48,7 +48,7 @@ alias weather-london='curl wttr.in/London'
 alias weather-cluj='curl wttr.in/Cluj'
 alias weather-wroclaw='curl wttr.in/Wroclaw'
 
-
+alias json-pretty-print='python -m json.tool'
 # Read markdown files nicely
 markdown () {
   pandoc $1 | lynx -stdin
