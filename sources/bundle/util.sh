@@ -34,7 +34,9 @@ function net-ping-test {
   ping www.amazon.com -c 2
 }
 
-function net-speed-test {
+alias net-speed-test='speedtest'
+
+function net-speed-test-world {
   print-status "New York:"
   wget --output-document=/dev/null -q --show-progress http://speedtest-nyc1.digitalocean.com/10mb.test
   print-status "Amsterdam:"
