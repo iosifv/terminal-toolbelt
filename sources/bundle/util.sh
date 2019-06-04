@@ -5,11 +5,25 @@ function tb-help-util {
     echo "markdown      = takes a file as an argument to simply read .md files"
     echo "weather       = shows the weather in london"
     echo "weather-[london|cluj|wroclaw]"
+    echo "json-pretty-print"
+    echo "json-pretty-color"
+    echo "show-my-ip"
+    echo "show-my-ip-detailed"
+    echo "net-ping-test"
+    echo "net-speed-test"
+    echo "net-usage-graph"
 }
 
+alias json-pretty-print='python -m json.tool'
+alias json-pretty-color='pygmentize -l json'
+
 alias show-my-ip='curl -4 icanhazip.com'
+alias show-my-ip-detailed='curl ifconfig.co/json --silent | json-pretty-print | json-pretty-color'
 
 function net-ping-test {
+  print-status "IP information:"
+  curl ifconfig.co/json --silent | json-pretty-print | json-pretty-color
+
   print-status "Google.com:"
   ping www.google.com -c 2
 
@@ -48,7 +62,7 @@ alias weather-london='curl wttr.in/London'
 alias weather-cluj='curl wttr.in/Cluj'
 alias weather-wroclaw='curl wttr.in/Wroclaw'
 
-alias json-pretty-print='python -m json.tool'
+
 # Read markdown files nicely
 markdown () {
   pandoc $1 | lynx -stdin
