@@ -43,12 +43,14 @@ alias net-usage-graph='speedometer -r eth0'
 
 # Super useful weather info because asking Siri or Google is mainstream
 #----------------------------
-alias weather='curl wttr.in/London'
-alias weather-london='curl wttr.in/London'
-alias weather-cluj='curl wttr.in/Cluj'
-alias weather-wroclaw='curl wttr.in/Wroclaw'
+alias weather='curl wttr.in'
+alias weatherLondon='curl wttr.in/London'
+alias weatherCluj='curl wttr.in/Cluj'
+alias weatherWroclaw='curl wttr.in/Wroclaw'
 
-alias json-pretty-print='python -m json.tool'
+alias json-pretty-print-python='python -m json.tool'
+alias json-pretty-print='jq'
+
 # Read markdown files nicely
 markdown () {
   pandoc $1 | lynx -stdin
