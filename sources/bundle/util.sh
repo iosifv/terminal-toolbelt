@@ -3,15 +3,15 @@
 function tb-help-util {
     print-status "util:"
     echo "markdown      = takes a file as an argument to simply read .md files"
-    echo "weather       = shows the weather in london"
+    echo "weather       = shows the weather locally"
     echo "weather-[london|cluj|wroclaw]"
     echo "json-pretty-print"
     echo "json-pretty-color"
     echo "show-my-ip"
     echo "show-my-ip-detailed"
-    echo "net-ping-test"
-    echo "net-speed-test"
-    echo "net-usage-graph"
+    echo "internet-ping"
+    echo "internet-speed"
+    echo "internet-graph"
 }
 
 alias json-pretty-print='python -m json.tool'
@@ -20,7 +20,7 @@ alias json-pretty-color='pygmentize -l json'
 alias show-my-ip='curl -4 icanhazip.com'
 alias show-my-ip-detailed='curl ifconfig.co/json --silent | json-pretty-print | json-pretty-color'
 
-function net-ping-test {
+function internet-ping {
   print-status "IP information:"
   curl ifconfig.co/json --silent | json-pretty-print | json-pretty-color
 
@@ -34,9 +34,9 @@ function net-ping-test {
   ping www.amazon.com -c 2
 }
 
-alias net-speed-test='speedtest'
+alias internet-speed='speedtest'
 
-function net-speed-test-world {
+function internet-speed-world {
   print-status "New York:"
   wget --output-document=/dev/null -q --show-progress http://speedtest-nyc1.digitalocean.com/10mb.test
   print-status "Amsterdam:"
@@ -55,7 +55,7 @@ function net-speed-test-world {
   wget --output-document=/dev/null -q --show-progress http://speedtest-blr1.digitalocean.com/10mb.test
 }
 
-alias net-usage-graph='speedometer -r eth0'
+alias internet-graph='speedometer -r eth0'
 
 # Super useful weather info because asking Siri or Google is mainstream
 #----------------------------
