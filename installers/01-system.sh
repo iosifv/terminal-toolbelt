@@ -44,3 +44,6 @@ sudo apt install ack
 
 # Midnight Commander - glorious file explorer
 sudo apt install mc
+
+# cat whith a nicer interface
+wget -O bat.deb https://github.com/sharkdp/bat/releases/download/v0.11.0/bat_0.11.0_amd64.deb  && sudo dpkg -i bat.deb && rm bat.deb
