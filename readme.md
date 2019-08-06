@@ -57,7 +57,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggesti
 sudo apt-get install fonts-powerline
 ```
 
-OR 
+OR
 
 https://github.com/powerline/fonts
 ```bash
@@ -74,6 +74,25 @@ https://github.com/agnoster/agnoster-zsh-theme
 just replace the default theme "robbyrussel" with "agnoster"
 ```bash
 nano ~/.zshrc
+```
+
+##### Install Powerlevel9k Theme for oh-my-zsh
+https://github.com/bhilburn/powerlevel9k
+https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#step-1-install-powerlevel9k
+
+
+```bash
+brew tap sambadevi/powerlevel9k
+brew install powerlevel9k
+echo "source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
+```
+
+##### Install Nerd-Fonts
+https://github.com/ryanoasis/nerd-fonts
+
+```bash
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
 ```
 
 ##### Install Solarized theme for OSX Terminal app
