@@ -17,7 +17,7 @@ export PATH=$PATH:~/bin
 # OH-MY-ZSH configs
 #----------------------------
 DEFAULT_USER=iosif
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
 unsetopt correct_all
 unalias grv
 
