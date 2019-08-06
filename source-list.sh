@@ -6,6 +6,7 @@ SOURCES_PATH=$DIR_PATH_FOR_TOOLBELT/sources
 # Need to be first
 #----------------------------
 source $SOURCES_PATH/alpha-configs.sh
+source $SOURCES_PATH/alpha-config-powerlevel.sh
 source $SOURCES_PATH/alpha-display.sh
 source $SOURCES_PATH/alpha-welcome.sh
 source $SOURCES_PATH/alpha-help.sh

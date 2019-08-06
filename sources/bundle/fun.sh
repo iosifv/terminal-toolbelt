@@ -68,3 +68,14 @@ function cowyell {
 
     cowsay -f "$cow" $1 | lolcat
 }
+
+
+function lsd {
+    local length=100
+    local index=1
+    while [ "$index" -le "$length" ]; do
+        printf "$index"
+
+        ((index++))
+    done
+}

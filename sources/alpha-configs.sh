@@ -13,6 +13,7 @@ alias composer="php /usr/local/Cellar/composer/1.8.4/bin/composer"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH=$PATH:~/bin
 
+#----------------------------
 # OH-MY-ZSH configs
 #----------------------------
 DEFAULT_USER=iosif
