@@ -43,7 +43,8 @@ prompt_zsh_battery_level() {
     #100%
   fi
   if [ $charging = "true" ];
-  then color='%F{green}'; if [ $percentage -gt 98 ]; then symbol='\uf584'; fi
+  # then color='%F{green}'; if [ $percentage -gt 98 ]; then symbol='\uf584'; fi
+  then color='%F{green}'; if [ $percentage -gt 98 ]; then return; fi
   fi
   echo -n "%{$color%}$symbol" ;
 }
@@ -99,4 +100,16 @@ prompt_zsh_showStatus () {
     # echo -n "$artist - $track";
     echo -n " $artist - $track";
   fi
+}
+
+list_powerlevel_icons () {
+increment=0x0001
+handle=0xE0A0
+
+for ((i=1;i<=60;i++))
+do
+   printf  "$handle - \u${handle:2:5}   | "
+   handle=$(($handle + $increment))
+   handle=$(printf '%#X' $handle)
+done
 }
