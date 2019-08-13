@@ -7,4 +7,4 @@ git checkout -b ng4 origin/ng4
 # sudo npm install -g pm2 grunt documentation
 npm install
 npm run grunt
-/home/iosif/wwwskin-analytics/skin-platform/install.sh
+/home/iosif/www/skin-analytics/skin-platform/install.sh
