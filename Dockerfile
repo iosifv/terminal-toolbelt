@@ -4,6 +4,7 @@ FROM ubuntu:18.04
 # Set maintainer as myself
 LABEL author="Iosif V."
 LABEL email="dev@iosifv.com"
+LABEL version="1.0.0"
 
 # Add arguments from CLI
 ARG ssh_private_key
