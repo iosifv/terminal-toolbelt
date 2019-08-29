@@ -26,6 +26,7 @@ source $SOURCES_PATH/bundle/fs-manage.sh
 source $SOURCES_PATH/bundle/fun.sh
 source $SOURCES_PATH/bundle/git.sh
 source $SOURCES_PATH/bundle/laravel.sh
+source $SOURCES_PATH/bundle/docker.sh
 source $SOURCES_PATH/bundle/nginx.sh
 source $SOURCES_PATH/bundle/node.sh
 source $SOURCES_PATH/bundle/php.sh

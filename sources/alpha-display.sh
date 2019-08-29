@@ -38,7 +38,7 @@ function print-quote {
 # Functions for confirming dangerous actions
 #----------------------------
 function confirmDragons {
-    print-error "Here be Dragons!"
+    print-error "🐉 Here be Dragons!"
     read "brave?Continue? "
     if [[ "$brave" =~ ^[Yy]$ ]]
     then
@@ -47,7 +47,7 @@ function confirmDragons {
 }
 
 function confirmStuff {
-    print-status "Please don't break stuff!"
+    print-status "⚠️ Please don't break stuff!"
     read "oath?Promise? "
     if [[ "$oath" =~ ^[Yy]$ ]]
     then

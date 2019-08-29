@@ -2,13 +2,10 @@
 FROM ubuntu:18.04
 
 # Set maintainer as myself
+LABEL maintainer="Iosif V. <dev@iosifv.com>"
 LABEL author="Iosif V."
 LABEL email="dev@iosifv.com"
 LABEL version="1.0.0"
-
-# Add arguments from CLI
-ARG ssh_private_key
-ARG ssh_public_key
 
 # Update aptitude with new repo
 RUN apt-get -yqq update \

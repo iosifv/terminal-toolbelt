@@ -10,6 +10,7 @@ function tb-help-system {
 
 # Change habits
 #alias sudo="echo '${C_YELLOW}Are you sure?${C_RESET}'"
+alias please=sudo
 
 # Useful if I make changes to this repository
 #----------------------------
