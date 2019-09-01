@@ -2,6 +2,14 @@
 
 function tb-help-mac {
     print-status "mac:"
+    echo "mac-kill-ds-store"
+    echo "mac-edit-hosts"
+    echo "mac-fs-usage"
+    echo "mac-battery"
+    echo "mac-hidden-files-on"
+    echo "mac-hidden-files-on"
+    echo "mac-window-shadows-on"
+    echo "mac-window-shadows-off"
 }
 
 # Misc

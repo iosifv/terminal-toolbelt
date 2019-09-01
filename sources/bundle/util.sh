@@ -12,6 +12,7 @@ function tb-help-util {
     echo "internet-ping"
     echo "internet-speed"
     echo "internet-graph"
+    echo "dir-dos2unix / dos2unix-dir"
 }
 
 alias json-pretty-print='python -m json.tool'
@@ -72,3 +73,6 @@ alias json-pretty-print='jq'
 markdown () {
   pandoc $1 | lynx -stdin
 }
+
+alias dos2unix-dir='find . -name "*.*" | xargs dos2unix'
+alias dir-dos2unix='dos2unix-dir'

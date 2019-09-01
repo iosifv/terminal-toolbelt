@@ -30,6 +30,10 @@ alias ragus='cd ${DIR_PATH_FOR_WWW}/bitbucket/ragus'
 alias ragusCode='code ${DIR_PATH_FOR_WWW}/bitbucket/ragus'
 alias ragusStorm='webstorm ${DIR_PATH_FOR_WWW}/bitbucket/ragus'
 
+alias ragusRunScrape='cd ${DIR_PATH_FOR_WWW}/bitbucket/ragus/scraper && serverless invoke local --function scrape'
+alias ragusRunParse='cd ${DIR_PATH_FOR_WWW}/bitbucket/ragus/parser && serverless invoke local --function parse'
+
+
 ### Personal soft ###
 #----------------------------
 alias etn-daemon='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Cryptocurrency/💰Wallets/\(ETN\)\ Electroneum/macOS-x64-0.11.0.0/electroneumd;'
