@@ -6,20 +6,20 @@ echo "                                  powered by ${C_YELLOW}Toolbelt${C_RESET}
 echo ""
 
 function can-i-haz-quote {
-    rand=$[$RANDOM % 6]
+    rand=$[$RANDOM % 8]
 
     case $rand in
-        0)  quote='Apple does not suck. Steve Jobs is our lord and saviour.';;
+        0)  quote='No such thing as spare time, no such thing as free time, no such thing as down time. All you got is life time. Go!';;
         1)  quote='Crush it!';;
         2)  quote="It's a mindset game!";;
         3)  quote='Productivity = commitment to excellence, intelligent planning and focused effort.';;
         4)  quote='Absorb what is useful, reject what is useless, add what is essentially your own';;
         5)  quote="I justify nothing to nobody about nothing. Whoever has judgement on me, they can't stop me";;
-        6)  quote='';;
-        7)  quote='';;
+        6)  quote='The way of success is the way of continuous pursuit of knowledge.';;
+        7)  quote='The person who stops studying merely because he has finished school is forever hopelesly doomed to mediocrity no matter what may be his calling.';;
         8)  quote='';;
         9)  quote='';;
-        10) quote='';;
+        10) quote='Apple does not suck. Steve Jobs is our lord and saviour.';;
     esac
 
     print-quote "$quote"

@@ -60,7 +60,7 @@ prompt_zsh_internet_signal(){
 
   if [ "$airport" = "Off" ]; then
           local color='%F{yellow}'
-          display_text="%{$color%}Wifi Off"
+          display_text="%{$color%}Off"
   else
           local ssid=$(echo $output | grep ' SSID' | awk -F': ' '{print $2}')
           local speed=$(echo $output | grep 'lastTxRate' | awk -F': ' '{print $2}')
