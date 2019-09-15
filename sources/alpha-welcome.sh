@@ -6,7 +6,7 @@ echo "                                  powered by ${C_YELLOW}Toolbelt${C_RESET}
 echo ""
 
 function can-i-haz-quote {
-    rand=$[$RANDOM % 8]
+    rand=$[$RANDOM % 9]
 
     case $rand in
         0)  quote='No such thing as spare time, no such thing as free time, no such thing as down time. All you got is life time. Go!';;
@@ -17,7 +17,7 @@ function can-i-haz-quote {
         5)  quote="I justify nothing to nobody about nothing. Whoever has judgement on me, they can't stop me";;
         6)  quote='The way of success is the way of continuous pursuit of knowledge.';;
         7)  quote='The person who stops studying merely because he has finished school is forever hopelesly doomed to mediocrity no matter what may be his calling.';;
-        8)  quote='';;
+        8)  quote='You are 100fucking% in charge of your life. Stop bitching!';;
         9)  quote='';;
         10) quote='Apple does not suck. Steve Jobs is our lord and saviour.';;
     esac
