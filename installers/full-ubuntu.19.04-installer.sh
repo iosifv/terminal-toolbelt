@@ -30,13 +30,12 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 
 # Node.JS
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-source ~/.profile
+source ~/.profile    # need to resource after installing nvm
 nvm install v6.17.1  # LTS
 nvm install v8.16.1  # LTS
 nvm install v10.16.3 # LTS
 nvm install v12.11.0 # not LTS
-
-sudo apt install nodejs npm -y
+sudo apt install npm -y
 npm i -g grunt grunt-cli gulp webpack documentation
 npm i -g express pm2 nodemon serverless
 
@@ -67,14 +66,13 @@ sudo apt install glances
 sudo apt install cowsay fortune lolcat -y
 
 # Glorious Snaps
-sudo snap install spotify caprine chromium snap-store vlc
-sudo snap install docker gitkraken postman
-sudo snap install aws-cli code slack --classic
+sudo snap install chromium docker gitkraken postman
+sudo snap install aws-cli --classic
+sudo snap install code    --classic
+
+# Snaps not needed in case of Virtual machine
+sudo snap install spotify caprine snap-store vlc
+sudo snap install slack   --classic
 
 # Things to do at the end
 # sudo mysql_secure_installation
-
-
-
-
-
