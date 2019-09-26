@@ -1,6 +1,7 @@
 # ====== Install Silence ========
 
 # Get my silence repo
+echo "Bitbucket password:"
 curl --user iosifv -L -O https://bitbucket.org/iosifvigh/silence/get/master.zip
 
 # Unzip the files
