@@ -47,3 +47,11 @@ git clone git@bitbucket.org:iosifvigh/ragus.git
 git clone git@bitbucket.org:iosifvigh/technical-interviews.git
 git clone git@bitbucket.org:iosifvigh/old-work-folders.git
 
+
+# iosifv.com
+cd ${TEMP_WWW}/bitbucket/iosifv
+composer install
+npm install
+cp .env.mysql .env
+php artisan 
+php artisan voyager:admin hi@iosifv.com --create
