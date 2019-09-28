@@ -19,7 +19,9 @@ export PATH=$PATH:~/bin
 DEFAULT_USER=iosif
 # ZSH_THEME="agnoster"
 unsetopt correct_all
-unalias grv
+
+# if grv is installed I need to unalias it
+# unalias grv 2> /dev/null
 
 # EPIC Oh-my-Zsh Plugins
 # plugins=(

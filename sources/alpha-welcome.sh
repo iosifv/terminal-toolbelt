@@ -25,7 +25,7 @@ function can-i-haz-quote {
     print-quote "$quote"
 }
 
-if [ ${OS_NAME} = "osx" ]; then
+if [[ "${OS_NAME}" == "osx" ]]; then
     can-i-haz-quote
     echo ""
 fi
@@ -35,7 +35,7 @@ fi
 # touch $HOME/.hushlogin
 # =====================================
 
-if [ ${OS_NAME} = "ubuntu" ]; then
+if [[ ${OS_NAME} == "ubuntu" ]]; then
 
     # Displays cool ubuntu logo and some extra info about the system
     echo "" && screenfetch

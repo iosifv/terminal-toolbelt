@@ -54,5 +54,5 @@ cd ${TEMP_WWW}/bitbucket/iosifv
 composer install
 npm install
 cp .env.mysql .env
-php artisan 
-php artisan voyager:admin hi@iosifv.com --create
+# php artisan 
+# php artisan voyager:admin hi@iosifv.com --create

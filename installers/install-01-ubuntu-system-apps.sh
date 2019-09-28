@@ -8,13 +8,15 @@
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt dist-upgrade -y
+
+# System software
 sudo apt install build-essential libssl-dev curl -y
 
 # Git Install & Config
 sudo apt install git -y
 git config --global user.email "dev@iosifv.com"
 git config --global user.name "Iosif V."
-git config --global core.autocrlf true
+git config --global core.autocrlf false
 
 # Nginx
 sudo apt install nginx -y
@@ -40,8 +42,11 @@ npm i -g grunt grunt-cli gulp webpack documentation
 npm i -g express pm2 nodemon serverless
 
 # Python
-sudo apt install python-pip -y
+sudo apt install python-pip python3-pip -y
 export PATH=$PATH:~/home/iosif/.local/bin
+
+# AWS
+pip3 install --upgrade --user awscli
 
 # Tools
 sudo apt install thefuck -y   # In case you fuck it up :)
@@ -53,6 +58,9 @@ sudo apt install ack -y       # Great search tool
 sudo apt install mc -y        # Midnight Commander
 sudo apt install multitail -y # Multiple tails in one feed
 sudo apt install yarn -y
+sudo apt install zsh -y       # Needed for oh-my-zsh
+
+# Bat = cat with wings
 curl -sLO https://github.com/sharkdp/bat/releases/download/v0.12.1/bat_0.12.1_amd64.deb && sudo dpkg -i bat_0.12.1_amd64.deb && rm bat_0.12.1_amd64.deb
 
 # Monitoring
@@ -74,5 +82,8 @@ sudo snap install code    --classic
 sudo snap install spotify caprine snap-store vlc
 sudo snap install slack   --classic
 
-# Things to do at the end
+
+## Things to do at the end
+aws configure
 # sudo mysql_secure_installation
+# install oh-my-zsh
