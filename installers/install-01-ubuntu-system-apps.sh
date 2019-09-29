@@ -68,7 +68,7 @@ sudo apt install htop -y
 sudo npm i -g gtop
 sudo apt install nmon -y && export NMON=clmnd
 sudo apt install speedtest-cli -y
-sudo apt install glances
+sudo apt install glances -y
 
 # Fun Stuff
 sudo apt install cowsay fortune lolcat -y
