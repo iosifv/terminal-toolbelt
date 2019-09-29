@@ -50,7 +50,7 @@ if [[ ${OS_NAME} == "ubuntu" ]]; then
 
     # Shows weather
     echo ""
-    ansiweather -l london
-    ansiweather -l cluj-napoca
+    ansiweather -l london -s true
+    ansiweather -l cluj-napoca -s true
 fi
 
