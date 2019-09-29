@@ -31,13 +31,13 @@ sudo apt install php7.2-xml php-zip php-mbstring php7.2-sqlite3 php-mysql -y
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 # Node.JS
+sudo apt install npm -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 source ~/.profile    # need to resource after installing nvm
 nvm install v6.17.1  # LTS
 nvm install v8.16.1  # LTS
 nvm install v10.16.3 # LTS
 nvm install v12.11.0 # not LTS
-sudo apt install npm -y
 npm i -g grunt grunt-cli gulp webpack documentation
 npm i -g express pm2 nodemon serverless
 
@@ -82,12 +82,12 @@ sudo snap install aws-cli --classic
 sudo snap install code    --classic
 
 # Snaps not needed in case of Virtual machine
-sudo snap install spotify caprine snap-store vlc
-sudo snap install slack   --classic
+# sudo snap install spotify caprine snap-store vlc
+# sudo snap install slack   --classic
 
 
 ## Things to do at the end
-aws configure
+# aws configure
 # sudo mysql_secure_installation
 
 # Install oh-my-zsh 
