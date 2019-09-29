@@ -56,3 +56,6 @@ npm install
 cp .env.mysql .env
 # php artisan 
 # php artisan voyager:admin hi@iosifv.com --create
+
+# terminal-toolbelt
+echo "source ~/www/github/terminal-toolbelt/loader-ubuntu.sh" >> ~/.zshrc

@@ -86,4 +86,7 @@ sudo snap install slack   --classic
 ## Things to do at the end
 aws configure
 # sudo mysql_secure_installation
-# install oh-my-zsh
+
+# Install oh-my-zsh 
+# This needs to be the last thing as the installer reloads the shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
