@@ -72,6 +72,9 @@ sudo apt install glances -y
 
 # Fun Stuff
 sudo apt install cowsay fortune lolcat -y
+sudo apt install screenfetch -y # Shows system information with nice graphics
+sudo apt install inxi -y        # Shows system information condensed in 2 lines
+sudo apt install ansiweather -y # Shows brief information about the weather
 
 # Glorious Snaps
 sudo snap install chromium docker gitkraken postman
