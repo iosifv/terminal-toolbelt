@@ -91,5 +91,6 @@ sudo snap install code    --classic
 # sudo mysql_secure_installation
 
 # Install oh-my-zsh 
-# This needs to be the last thing as the installer reloads the shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# !! This needs to be the last thing as the installer reloads the shell !!
+# !!   The default shell will only change after you log-out and log-in  !!

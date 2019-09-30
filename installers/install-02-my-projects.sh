@@ -48,6 +48,9 @@ git clone git@bitbucket.org:iosifvigh/ragus.git
 git clone git@bitbucket.org:iosifvigh/technical-interviews.git
 git clone git@bitbucket.org:iosifvigh/old-work-folders.git
 
+# terminal-toolbelt
+echo "source ~/www/github/terminal-toolbelt/loader-ubuntu.sh" >> ~/.zshrc
+
 
 # iosifv.com
 cd ${TEMP_WWW}/bitbucket/iosifv
@@ -57,5 +60,3 @@ cp .env.mysql .env
 # php artisan 
 # php artisan voyager:admin hi@iosifv.com --create
 
-# terminal-toolbelt
-echo "source ~/www/github/terminal-toolbelt/loader-ubuntu.sh" >> ~/.zshrc
