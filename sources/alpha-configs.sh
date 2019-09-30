@@ -13,19 +13,3 @@ alias composer="php /usr/local/Cellar/composer/1.8.4/bin/composer"
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH=$PATH:~/bin
 
-#----------------------------
-# OH-MY-ZSH configs
-#----------------------------
-DEFAULT_USER=iosif
-# ZSH_THEME="agnoster"
-unsetopt correct_all
-
-# if grv is installed I need to unalias it
-# unalias grv 2> /dev/null
-
-# EPIC Oh-my-Zsh Plugins
-# plugins=(
-#   git
-#   colored-man-pages
-#   zsh-syntax-highlighting
-# )
