@@ -93,9 +93,14 @@ POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='darkgrey'
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='springgreen4'
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='grey'
 
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+#     zsh_showStatus newline
+#     happy_symbol context custom_battery_status_joined custom_internet_signal ram load ssh root_indicator dir dir_writable vcs)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time background_jobs status)
+
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-    zsh_showStatus newline
-    happy_symbol context custom_battery_status_joined custom_internet_signal ram load ssh root_indicator dir dir_writable vcs)
+    happy_symbol context ram load ssh root_indicator dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time background_jobs status)
+
 HIST_STAMPS="mm/dd/yyyy"
 DISABLE_UPDATE_PROMPT=true
