@@ -19,6 +19,7 @@ alias iosifvStorm='webstorm ${DIR_PATH_FOR_WWW}/bitbucket/iosifv'
 
 alias toolbelt='cd ${DIR_PATH_FOR_TOOLBELT}'
 alias toolbeltCode='code ${DIR_PATH_FOR_TOOLBELT}'
+alias toolbeltDos2unix='cd ${DIR_PATH_FOR_TOOLBELT} && find . -name "*.sh" | xargs dos2unix'
 alias toolbeltStorm='webstorm ${DIR_PATH_FOR_TOOLBELT}'
 alias toolbeltInstallers='cd ${DIR_PATH_FOR_TOOLBELT}/installers'
 

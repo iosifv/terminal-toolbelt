@@ -59,6 +59,7 @@ sudo apt install mc -y        # Midnight Commander
 sudo apt install multitail -y # Multiple tails in one feed
 sudo apt install yarn -y
 sudo apt install zsh -y       # Needed for oh-my-zsh
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
 
 # Bat = cat with wings
 curl -sLO https://github.com/sharkdp/bat/releases/download/v0.12.1/bat_0.12.1_amd64.deb && sudo dpkg -i bat_0.12.1_amd64.deb && rm bat_0.12.1_amd64.deb
