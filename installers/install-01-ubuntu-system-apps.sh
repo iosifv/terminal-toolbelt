@@ -49,7 +49,6 @@ export PATH=$PATH:~/home/iosif/.local/bin
 pip3 install --upgrade --user awscli
 
 # Tools
-sudo apt install thefuck -y   # In case you fuck it up :)
 sudo apt install dos2unix -y  # CRLF stuff
 sudo apt install xclip -y     # copy stuff to clipboard
 sudo apt install ncdu -y      # Analyze disk usage
@@ -59,6 +58,7 @@ sudo apt install mc -y        # Midnight Commander
 sudo apt install multitail -y # Multiple tails in one feed
 sudo apt install yarn -y
 sudo apt install zsh -y       # Needed for oh-my-zsh
+sudo pip3 install thefuck -y  # In case you fuck it up :)
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
 
 # Bat = cat with wings
