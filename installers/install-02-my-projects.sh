@@ -8,15 +8,20 @@ curl --user iosifv -L -O https://bitbucket.org/iosifvigh/silence/get/master.zip
 unzip master.zip
 
 # Execute scripts
-cd iosifvigh-silence-ef4c52b7cd09/
-echo "Enter Silence password"
-sh ./unpack.sh
-sh ./overwrite.sh
+cd iosifvigh-silence-577ff0b159b0/
+
+echo "Enter Silence password (for .ssh)"
+sh ./ssh/unpack.sh
+sh ./ssh/overwrite.sh
+
+echo "Enter Silence password (for .aws)"
+sh ./aws/unpack.sh
+sh ./aws/overwrite.sh
 
 # Delete Silence
 cd ..
 rm master.zip
-rm -rf iosifvigh-silence-ef4c52b7cd09/
+rm -rf iosifvigh-silence-577ff0b159b0/
 
 
 # ====== Make Directories ========
@@ -45,6 +50,7 @@ git clone git@bitbucket.org:iosifvigh/silence.git
 git clone git@bitbucket.org:iosifvigh/iosifv.git
 git clone git@bitbucket.org:iosifvigh/casa4.co.uk.git
 git clone git@bitbucket.org:iosifvigh/ragus.git
+git clone git@bitbucket.org:iosifvigh/ragus-client.git
 git clone git@bitbucket.org:iosifvigh/technical-interviews.git
 git clone git@bitbucket.org:iosifvigh/work-folders.git
 git clone git@bitbucket.org:iosifvigh/udemy.git

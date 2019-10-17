@@ -83,12 +83,12 @@ sudo snap install aws-cli --classic
 sudo snap install code    --classic
 
 # Snaps not needed in case of Virtual machine
-# sudo snap install spotify caprine snap-store vlc
-# sudo snap install slack   --classic
+sudo snap install spotify caprine snap-store vlc
+sudo snap install slack   --classic
 
 
 ## Things to do at the end
-# aws configure
+# aws configure ====>>> Not needed any more as silence takes care of this
 # sudo mysql_secure_installation
 
 # Install oh-my-zsh 
