@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-echo " ---===[[[ ${C_YELLOW} Today is a great day to ${C_GREEN}HUSTLE${C_RESET}  ]]]===---"
-echo "                                  powered by ${C_YELLOW}Toolbelt${C_RESET}"
-# echo ""
-# php -r "echo 'PHP v' . substr(phpversion(), 0, 3);"
-echo ""
+
+function can-i-haz-greeting {
+    echo " ---===[[[ ${C_YELLOW} Today is a great day to ${C_GREEN}HUSTLE${C_RESET}  ]]]===---"
+    echo "                                  powered by ${C_YELLOW}Toolbelt${C_RESET}"
+    echo ""
+}
 
 function can-i-haz-quote {
     rand=$[$RANDOM % 9]
@@ -26,8 +27,23 @@ function can-i-haz-quote {
 }
 
 if [[ "${OS_NAME}" == "osx" ]]; then
+    can-i-haz-greeting
     can-i-haz-quote
     echo ""
+fi
+
+
+if [[ ${OS_NAME} == "ubuntu" ]]; then
+    can-i-haz-greeting
+    can-i-haz-quote
+    echo ""
+
+    # Displays system disk usage
+    echo "" && export TERM=xterm; inxi -D
+    # echo "" && free -h
+
+    # Shows uptime, obviously
+    echo "" && uptime -p
 fi
 
 # =====================================
@@ -35,8 +51,12 @@ fi
 # touch $HOME/.hushlogin
 # =====================================
 
-if [[ ${OS_NAME} == "ubuntu" ]]; then
+if [[ ${OS_NAME} == "server" ]]; then
 
+    can-i-haz-greeting
+    can-i-haz-quote
+    echo ""
+    
     # Displays cool ubuntu logo and some extra info about the system
     echo "" && screenfetch
     echo ""
