@@ -8,7 +8,7 @@ curl --user iosifv -L -O https://bitbucket.org/iosifvigh/silence/get/master.zip
 unzip master.zip
 
 # Execute scripts
-cd iosifvigh-silence-577ff0b159b0/
+cd iosifvigh-silence-c6c038e8a63c/
 
 echo "Enter Silence password (for .ssh)"
 cd ssh/
@@ -25,7 +25,7 @@ cd ..
 # Delete Silence
 cd ..
 rm master.zip
-rm -rf iosifvigh-silence-577ff0b159b0/
+rm -rf iosifvigh-silence-c6c038e8a63c/
 
 
 # ====== Make Directories ========
