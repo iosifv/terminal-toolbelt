@@ -11,12 +11,16 @@ unzip master.zip
 cd iosifvigh-silence-577ff0b159b0/
 
 echo "Enter Silence password (for .ssh)"
-sh ./ssh/unpack.sh
-sh ./ssh/overwrite.sh
+cd ssh/
+sh ./unpack.sh
+sh ./overwrite.sh
+cd ..
 
 echo "Enter Silence password (for .aws)"
-sh ./aws/unpack.sh
-sh ./aws/overwrite.sh
+cd aws/
+sh ./unpack.sh
+sh ./overwrite.sh
+cd ..
 
 # Delete Silence
 cd ..
