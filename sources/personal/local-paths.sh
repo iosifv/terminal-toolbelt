@@ -45,3 +45,8 @@ alias etn-wallet='/Users/iosif/Google\ Drive/💰_WealthAugmentation\!/🔐Crypt
 #----------------------------
 #alias homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead'
 alias start-homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead/ && vagrant reload --provision'
+
+### Work folders ###
+#----------------------------
+alias tc='cd ${DIR_PATH_FOR_WWW}/true-compliance/api'
+alias tcCode='code ${DIR_PATH_FOR_WWW}/true-compliance/api'

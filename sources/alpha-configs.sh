@@ -9,7 +9,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2> /
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2> /dev/null
 
 # alias composer="php $DIR_PATH_FOR_BIN/composer.phar"
-alias composer="php /usr/local/Cellar/composer/1.8.4/bin/composer"
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+# alias composer="php /usr/local/Cellar/composer/1.8.4/bin/composer"
+export PATH="$PATH:/usr/local/bin"
 export PATH=$PATH:~/bin
 

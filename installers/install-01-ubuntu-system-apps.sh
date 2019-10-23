@@ -25,10 +25,12 @@ sudo apt install nginx -y
 sudo apt install mysql-server mysqltuner -y
 
 # PHP
-sudo apt install php7.2 -y
-#sudo apt install php7.3 -y
-sudo apt install php7.2-xml php-zip php-mbstring php7.2-sqlite3 php-mysql -y
+# sudo apt install php -y
+sudo apt install php7.3 -y
+# sudo apt install php7.2-xml php7.2-mbstring php7.2-mysql php7.2-sqlite3 php-zip -y
+sudo apt install php7.3-xml php7.3-mbstring php7.3-mysql php7.3-sqlite3 php7.3-simplexml  -y
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+sudo apt install phpunit -y
 
 # Node.JS
 sudo apt install npm -y
@@ -59,6 +61,7 @@ sudo apt install multitail -y # Multiple tails in one feed
 sudo apt install yarn -y
 sudo apt install zsh -y       # Needed for oh-my-zsh
 sudo pip3 install thefuck -y  # In case you fuck it up :)
+sudo pip3 install pygments -y  # Pygmentyze your output
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
 
 # Bat = cat with wings
