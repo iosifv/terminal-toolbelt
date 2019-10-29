@@ -73,6 +73,7 @@ sudo npm i -g gtop
 sudo apt install nmon -y && export NMON=clmnd
 sudo apt install speedtest-cli -y
 sudo apt install glances -y
+sudo apt install speedometer -y
 
 # Fun Stuff
 sudo apt install cowsay fortune lolcat -y
@@ -80,10 +81,14 @@ sudo apt install screenfetch -y # Shows system information with nice graphics
 sudo apt install inxi -y        # Shows system information condensed in 2 lines
 sudo apt install ansiweather -y # Shows brief information about the weather
 
+# Status of the tube
+sudo wget https://raw.githubusercontent.com/smallwat3r/tubestatus/master/src/tubestatus -P /usr/local/bin && sudo chmod 755 /usr/local/bin/tubestatus
+
 # Glorious Snaps
 sudo snap install chromium docker gitkraken postman
 sudo snap install aws-cli --classic
 sudo snap install code    --classic
+sudo snap install cointop --stable
 
 # Snaps not needed in case of Virtual machine
 sudo snap install spotify caprine snap-store vlc

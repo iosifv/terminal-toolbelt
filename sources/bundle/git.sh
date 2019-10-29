@@ -44,6 +44,7 @@ alias gpom='git remote update && git pull origin master'
 alias gpop='git remote update && git pull origin production'
 alias gpod='git remote update && git pull origin develop'
 alias gpou='git remote update && git pull origin uat'
+alias gpos='git remote update && git pull origin staging'
 
 # Git log in a nice format
 alias gl='git log --pretty=format:"[%C(auto)%h][%Cgreen%an%Creset]%C(auto)%d %s (%Cblue%ar%Creset)" --graph --color'
