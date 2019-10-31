@@ -89,6 +89,8 @@ function test-drive-speed {
   sudo /sbin/sysctl -w vm.drop_caches=3
   dd if=tempfile of=/dev/null bs=1M count=1024
 
+  rm -v tempfile
+
   print-status "Use hdparm:"
   sudo hdparm -Tt /dev/sda
 }

@@ -60,8 +60,9 @@ sudo apt install mc -y        # Midnight Commander
 sudo apt install multitail -y # Multiple tails in one feed
 sudo apt install yarn -y
 sudo apt install zsh -y       # Needed for oh-my-zsh
+sudo apt install qalc -y      # Amazing Qualculator
 sudo pip3 install thefuck -y  # In case you fuck it up :)
-sudo pip3 install pygments -y  # Pygmentyze your output
+sudo pip3 install pygments -y # Pygmentyze your output
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
 
 # Bat = cat with wings
