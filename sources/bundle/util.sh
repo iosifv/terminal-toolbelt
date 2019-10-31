@@ -76,3 +76,19 @@ markdown () {
 
 alias dos2unix-dir='find . -name "*.*" | xargs dos2unix'
 alias dir-dos2unix='dos2unix-dir'
+
+function test-drive-speed {
+  sudo echo '.'
+  print-status "Test Write Speed:"
+  sync; dd if=/dev/zero of=tempfile bs=1M count=1024; sync
+
+  print-status "Test Read Speed from buffer:"
+  dd if=tempfile of=/dev/null bs=1M count=1024
+
+  print-status "Test Read Speed no buffer:"
+  sudo /sbin/sysctl -w vm.drop_caches=3
+  dd if=tempfile of=/dev/null bs=1M count=1024
+
+  print-status "Use hdparm:"
+  sudo hdparm -Tt /dev/sda
+}
