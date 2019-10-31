@@ -17,6 +17,7 @@ sudo apt install git -y
 git config --global user.email "dev@iosifv.com"
 git config --global user.name "Iosif V."
 git config --global core.autocrlf false
+sudo apt install tig -y      # A console UI for GIT
 
 # Nginx
 sudo apt install nginx -y
@@ -61,8 +62,12 @@ sudo apt install multitail -y # Multiple tails in one feed
 sudo apt install yarn -y
 sudo apt install zsh -y       # Needed for oh-my-zsh
 sudo apt install qalc -y      # Amazing Qualculator
+sudo apt install cloc -y      # Counts lines of code
 sudo pip3 install thefuck -y  # In case you fuck it up :)
 sudo pip3 install pygments -y # Pygmentyze your output
+sudo apt install vifm ranger -y # Alternatives to the midnight commander. 
+
+# Youtube Downloader
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl
 
 # Bat = cat with wings
@@ -75,6 +80,7 @@ sudo apt install nmon -y && export NMON=clmnd
 sudo apt install speedtest-cli -y
 sudo apt install glances -y
 sudo apt install speedometer -y
+sudo apt install powertop -y      # Helps conserve power on Linux
 
 # Fun Stuff
 sudo apt install cowsay fortune lolcat -y
