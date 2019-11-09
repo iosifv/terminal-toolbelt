@@ -10,7 +10,8 @@ sudo apt upgrade -y
 sudo apt dist-upgrade -y
 
 # System software
-sudo apt install build-essential libssl-dev curl -y
+sudo apt install build-essential libssl-dev libpng-dev -y
+sudo apt install curl snapd -y
 
 # Git Install & Config
 sudo apt install git -y
@@ -92,14 +93,16 @@ sudo apt install ansiweather -y # Shows brief information about the weather
 sudo wget https://raw.githubusercontent.com/smallwat3r/tubestatus/master/src/tubestatus -P /usr/local/bin && sudo chmod 755 /usr/local/bin/tubestatus
 
 # Glorious Snaps
-sudo snap install chromium docker gitkraken postman
+sudo snap install docker postman
 sudo snap install aws-cli --classic
 sudo snap install code    --classic
 sudo snap install cointop --stable
 
 # Snaps not needed in case of Virtual machine
-sudo snap install spotify caprine snap-store vlc
+sudo snap install spotify caprine snap-store vlc gitkraken chromium
 sudo snap install slack   --classic
+sudo snap install phpstorm --classic
+sudo snap install webstorm --classic
 
 
 ## Things to do at the end
