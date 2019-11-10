@@ -91,14 +91,12 @@ cp ~/www/github/terminal-toolbelt/installers/extras/tmux-conf/.tmux.conf.local ~
 
 # iosifv.com
 cd ${TEMP_WWW}/bitbucket/iosifv
-composer install
-npm install
-cp .env.mysql .env
-# php artisan voyager:admin hi@iosifv.com --create
+sh ${TEMP_WWW}/bitbucket/iosifv/build.sh
 
 # Ragus
 sh ${TEMP_WWW}/bitbucket/ragus/setup.sh
 
 
 # Mesages at the end
+echo ''
 echo '!!! Set a powerline font in your Terminal application !!!'
