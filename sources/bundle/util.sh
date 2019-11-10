@@ -94,3 +94,11 @@ function test-drive-speed {
   print-status "Use hdparm:"
   sudo hdparm -Tt /dev/sda
 }
+
+function phpStorm-reset-trial-v2019.2 {
+  cd ~/.PhpStorm2019.2                                                                                                                                                         0.00 Dur  ✔
+  rm -v config/eval/PhpStorm192.evaluation.key
+  sed -i '/evlsprt/d' config/options/options.xml
+  cd ~/.java/.userPrefs/jetbrains
+  rm -rfv phpstorm
+}
