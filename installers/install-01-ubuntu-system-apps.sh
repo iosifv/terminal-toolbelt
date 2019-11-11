@@ -32,7 +32,7 @@ sudo apt install php7.3 -y
 # sudo apt install php7.2-xml php7.2-mbstring php7.2-mysql php7.2-sqlite3 php-zip -y
 sudo apt install php7.3-xml php7.3-mbstring php7.3-mysql php7.3-sqlite3 php7.3-simplexml  -y
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
-sudo apt install phpunit -y
+sudo composer global require phpunit/phpunit ^8
 
 # Node.JS
 sudo apt install npm -y
