@@ -60,13 +60,16 @@ sudo apt install tmux -y      # Terminal multiplexer
 sudo apt install ack -y       # Great search tool
 sudo apt install mc -y        # Midnight Commander
 sudo apt install multitail -y # Multiple tails in one feed
-sudo apt install yarn -y
+sudo apt install yarn -y      # Yet another Dependency manager
 sudo apt install zsh -y       # Needed for oh-my-zsh
 sudo apt install qalc -y      # Amazing Qualculator
 sudo apt install cloc -y      # Counts lines of code
 sudo pip3 install thefuck -y  # In case you fuck it up :)
 sudo pip3 install pygments -y # Pygmentyze your output
-sudo apt install vifm ranger -y # Alternatives to the midnight commander. 
+sudo apt install ranger -y    # Alternatives to the midnight commander. 
+
+# Controll your cloud with rclone
+curl https://rclone.org/install.sh | sudo bash
 
 # Youtube Downloader
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && sudo chmod a+rx /usr/local/bin/youtube-dl

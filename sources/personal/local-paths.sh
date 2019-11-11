@@ -24,8 +24,8 @@ alias toolbeltStorm='webstorm ${DIR_PATH_FOR_TOOLBELT}'
 alias toolbeltInstallers='cd ${DIR_PATH_FOR_TOOLBELT}/installers'
 
 alias silence='cd ${DIR_PATH_FOR_WWW}/bitbucket/silence'
-alias silenceCode='code ${DIR_PATH_FOR_WWW}/bitbucket/silences'
-alias silenceStorm='webstorm ${DIR_PATH_FOR_WWW}/bitbucket/silences'
+alias silenceCode='code ${DIR_PATH_FOR_WWW}/bitbucket/silence'
+alias silenceStorm='webstorm ${DIR_PATH_FOR_WWW}/bitbucket/silence'
 
 alias ragus='cd ${DIR_PATH_FOR_WWW}/bitbucket/ragus'
 alias ragusCode='code ${DIR_PATH_FOR_WWW}/bitbucket/ragus'

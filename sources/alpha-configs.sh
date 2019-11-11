@@ -11,5 +11,6 @@ source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighti
 # alias composer="php $DIR_PATH_FOR_BIN/composer.phar"
 # alias composer="php /usr/local/Cellar/composer/1.8.4/bin/composer"
 export PATH="$PATH:/usr/local/bin"
+export PATH=/home/iosif/.composer/vendor/bin:$PATH
 export PATH=$PATH:~/bin
 
