@@ -39,11 +39,11 @@ if [[ ${OS_NAME} == "ubuntu" ]]; then
     echo ""
 
     # Displays system disk usage
-    echo "" && export TERM=xterm; inxi -D
+    # echo "" && export TERM=xterm; inxi -D
     # echo "" && free -h
 
     # Shows uptime, obviously
-    echo "" && uptime -p
+    # echo "" && uptime -p
 fi
 
 # =====================================
