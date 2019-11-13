@@ -52,6 +52,9 @@ export PATH=$PATH:~/home/iosif/.local/bin
 # AWS
 pip3 install --upgrade --user awscli
 
+# rClone
+curl https://rclone.org/install.sh | sudo bash
+
 # Tools
 sudo apt install dos2unix -y  # CRLF stuff
 sudo apt install xclip -y     # copy stuff to clipboard

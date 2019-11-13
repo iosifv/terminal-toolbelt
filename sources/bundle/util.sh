@@ -23,7 +23,7 @@ alias show-my-ip-detailed='curl ifconfig.co/json --silent | json-pretty-print | 
 
 function internet-ping {
   print-status "IP information:"
-  curl ifconfig.co/json --silent | json-pretty-print | json-pretty-color
+  curl ifconfig.co/json --silent | json-pretty-print #| json-pretty-color
 
   print-status "Google.com:"
   ping www.google.com -c 2
@@ -61,6 +61,7 @@ alias internet-graph='speedometer -r eth0'
 # Super useful weather info because asking Siri or Google is mainstream
 #----------------------------
 alias weather='curl wttr.in'
+alias weather2='curl wttr.in/?format=v2'
 alias weatherLondon='curl wttr.in/London'
 alias weatherCluj='curl wttr.in/Cluj'
 alias weatherWroclaw='curl wttr.in/Wroclaw'

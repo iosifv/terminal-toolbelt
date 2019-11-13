@@ -14,4 +14,4 @@ export PATH="$PATH:/usr/local/bin"
 export PATH=/home/iosif/.composer/vendor/bin:$PATH
 export PATH=$PATH:~/bin
 
-export TERM="xterm-256color"
+# export TERM="xterm-256color"

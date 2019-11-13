@@ -22,6 +22,12 @@ sh ./unpack.sh
 sh ./overwrite.sh
 cd ..
 
+echo "Enter Silence password (for .rclone)"
+cd rclone/
+sh ./unpack.sh
+sh ./overwrite.sh
+cd ..
+
 # Delete Silence
 cd ..
 rm master.zip
