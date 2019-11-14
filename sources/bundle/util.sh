@@ -61,7 +61,7 @@ alias internet-graph='speedometer -r eth0'
 # Super useful weather info because asking Siri or Google is mainstream
 #----------------------------
 alias weather='curl wttr.in'
-alias weather2='curl wttr.in/?format=v2'
+alias weather2='curl "wttr.in/?format=v2"'
 alias weatherLondon='curl wttr.in/London'
 alias weatherCluj='curl wttr.in/Cluj'
 alias weatherWroclaw='curl wttr.in/Wroclaw'

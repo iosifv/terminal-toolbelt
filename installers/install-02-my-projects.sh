@@ -28,6 +28,8 @@ sh ./unpack.sh
 sh ./overwrite.sh
 cd ..
 
+
+TODO: CHANGE THE HASH OF THE DIRECTORY
 # Delete Silence
 cd ..
 rm master.zip
