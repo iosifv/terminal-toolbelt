@@ -68,3 +68,7 @@ alias sqlite-open='sqlite3 database/database.sqlite'
 alias llog='multitail storage/logs/laravel.log'
 alias ltail='llog'
 
+# Fastest
+#----------------------------
+alias fastest='fastest --xml=phpunit.xml'
+
