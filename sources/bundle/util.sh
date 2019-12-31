@@ -97,9 +97,17 @@ function test-drive-speed {
 }
 
 function phpStorm-reset-trial-v2019.2 {
-  cd ~/.PhpStorm2019.2                                                                                                                                                         0.00 Dur  ✔
-  rm -v config/eval/PhpStorm192.evaluation.key
-  sed -i '/evlsprt/d' config/options/options.xml
+  cd ~/.PhpStorm2019.2
+  rm -v config/eval/*.evaluation.key
+  sed -i '/evlsprt/d' config/options/*.xml
+  cd ~/.java/.userPrefs/jetbrains
+  rm -rfv phpstorm
+}
+
+function phpStorm-reset-trial-v2019.3 {
+  cd ~/.PhpStorm2019.3
+  rm -v config/eval/*.evaluation.key
+  sed -i '/evlsprt/d' config/options/*.xml
   cd ~/.java/.userPrefs/jetbrains
   rm -rfv phpstorm
 }
