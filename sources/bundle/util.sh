@@ -111,3 +111,19 @@ function phpStorm-reset-trial-v2019.3 {
   cd ~/.java/.userPrefs/jetbrains
   rm -rfv phpstorm
 }
+
+function webStorm-reset-trial-v2019.2 {
+  cd ~/.WebStorm2019.2
+  rm -v config/eval/*.evaluation.key
+  sed -i '/evlsprt/d' config/options/*.xml
+  cd ~/.java/.userPrefs/jetbrains
+  rm -rfv webstorm
+}
+
+function webStorm-reset-trial-v2019.3 {
+  cd ~/.WebStorm2019.3
+  rm -v config/eval/*.evaluation.key
+  sed -i '/evlsprt/d' config/options/*.xml
+  cd ~/.java/.userPrefs/jetbrains
+  rm -rfv webstorm
+}
