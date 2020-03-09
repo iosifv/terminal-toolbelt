@@ -37,6 +37,8 @@ if [[ ${OS_NAME} == "ubuntu" ]]; then
     can-i-haz-greeting
     can-i-haz-quote
     echo ""
+    
+    crypto-status-minimal
 
     # Displays system disk usage
     # echo "" && export TERM=xterm; inxi -D

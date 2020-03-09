@@ -9,7 +9,7 @@ source $SOURCES_PATH/alpha-configs.sh
 source $SOURCES_PATH/alpha-config-powerlevel-functions.sh
 source $SOURCES_PATH/alpha-config-powerlevel.sh
 source $SOURCES_PATH/alpha-display.sh
-source $SOURCES_PATH/alpha-welcome.sh
+# source $SOURCES_PATH/alpha-welcome.sh
 source $SOURCES_PATH/alpha-help.sh
 
 
@@ -40,5 +40,10 @@ source $SOURCES_PATH/bundle/util.sh
 #----------------------------
 source $SOURCES_PATH/personal/iosifv.com.sh
 source $SOURCES_PATH/personal/persona.sh
+source $SOURCES_PATH/personal/stats.sh
 source $SOURCES_PATH/personal/local-paths.sh
 source $SOURCES_PATH/personal/ssh-locations.sh
+
+# Welcome message. Last to make use of all the other functions
+#----------------------------
+source $SOURCES_PATH/alpha-welcome.sh
