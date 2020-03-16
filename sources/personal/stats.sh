@@ -3,7 +3,7 @@ function _crypto-print-price {
 }
 
 function _crypto-print-minimal {
-    bitcoin-chart-cli --coin $1 --currency $2 --days 14 --height 4 --width 56
+    bitcoin-chart-cli --coin $1 --currency $2 --days 4 --height 4 --width 40
 }
 
 function _crypto-print-default {
@@ -15,25 +15,25 @@ function _crypto-print-long {
 }
 
 function crypto-status {
-    _crypto-print-default BTC USD
+    _crypto-print-default BTC EUR
     _crypto-print-default XTZ EUR
     _crypto-print-default ARK BTC
 }
 
 function crypto-status-minimal {
-    _crypto-print-minimal BTC USD
+    _crypto-print-minimal BTC EUR
     _crypto-print-minimal XTZ EUR
-    _crypto-print-minimal ARK BTC
+    # _crypto-print-minimal ARK BTC
 }
 
 function crypto-status-price {
-    _crypto-print-price BTC USD
+    _crypto-print-price BTC EUR
     _crypto-print-price XTZ EUR
     _crypto-print-price ARK BTC
 }
 
 function crypto-status-long {
-    _crypto-print-long BTC USD
+    _crypto-print-long BTC EUR
     _crypto-print-long XTZ EUR
     _crypto-print-long ARK BTC
 }
