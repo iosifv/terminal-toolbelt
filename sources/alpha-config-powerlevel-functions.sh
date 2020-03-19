@@ -82,13 +82,30 @@ prompt_zsh_internet_signal(){
 POWERLEVEL9K_CUSTOM_HAPPY_SYMBOL="happy_symbol"
 POWERLEVEL9K_CUSTOM_HAPPY_SYMBOL_BACKGROUND="yellow"
 prompt_happy_symbol(){
-        rand=$[$RANDOM % 3]
-        case $rand in
-                0) local symbol="🕊";;
-                1) local symbol="🦄";;
-                2) local symbol="🐶";;
-        esac
-        echo -n " $symbol "
+  rand=$[$RANDOM % 12]
+  case $rand in
+    0)  local symbol="🕊";;
+    1)  local symbol="🦄";;
+    2)  local symbol="🐕";;
+    3)  local symbol="🐇";;
+    4)  local symbol="🐰";;
+    5)  local symbol="🐝";;
+    6)  local symbol="🐤";;
+    7)  local symbol="🐣";;
+    8)  local symbol="🐄";;
+    9)  local symbol="🐎";;
+    10) local symbol="🐖";;
+    11) local symbol="🐘";;
+    12) local symbol="🐻";;
+    13) local symbol="🌱";;
+    14) local symbol="🌼";;
+    15) local symbol="🍫";;
+    16) local symbol="🐼";;
+    17) local symbol="🌲";;
+    10) local symbol="😊";;
+    11) local symbol="💚";;
+  esac
+  echo -n " $symbol "
 }
 
 prompt_zsh_showStatus () {
