@@ -23,13 +23,12 @@ function crypto-status {
 function crypto-status-minimal {
     _crypto-print-minimal BTC EUR
     _crypto-print-minimal XTZ EUR
-    # _crypto-print-minimal ARK BTC
+    _crypto-print-minimal ARK BTC
 }
 
 function crypto-status-price {
-    _crypto-print-price BTC EUR
-    _crypto-print-price XTZ EUR
-    _crypto-print-price ARK BTC
+    echo "Bitcoin: $(cointop price --coin bitcoin --currency EUR)"
+    echo "Tezos:   $(cointop price --coin tezos --currency EUR)"
 }
 
 function crypto-status-long {
