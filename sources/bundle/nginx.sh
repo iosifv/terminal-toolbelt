@@ -8,6 +8,8 @@ function tb-help-nginx {
     echo "nginx-reload"
     echo "nginx-goto-sites-available"
     echo "nginx-goto-sites-enabled"
+    echo "nginx-log-access"
+    echo "nginx-log-error"
     echo "nginx-list-sites"
 }
 
@@ -18,4 +20,6 @@ alias nginx-restart='sudo systemctl restart nginx'
 alias nginx-reload='sudo systemctl reload nginx'
 alias nginx-goto-sites-available='cd /etc/nginx/sites-available/'
 alias nginx-goto-sites-enabled='cd /etc/nginx/sites-enabled/'
+alias nginx-log-access='sudo multitail /var/log/nginx/access.log'
+alias nginx-log-error='sudo multitail /var/log/nginx/error.log'
 alias nginx-list-sites='ls -l /etc/nginx/sites-available/ && ls -l /etc/nginx/sites-enabled/'
