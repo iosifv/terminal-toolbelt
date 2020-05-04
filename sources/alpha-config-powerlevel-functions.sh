@@ -105,7 +105,8 @@ prompt_happy_symbol(){
     10) local symbol="😊";;
     11) local symbol="💚";;
   esac
-  echo -n " $symbol "
+  # echo -n " $symbol "
+  p10k segment -s PROTECTED -f blue -t "${symbol}"
 }
 
 prompt_zsh_showStatus () {
