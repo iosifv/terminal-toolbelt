@@ -32,9 +32,9 @@ alias silenceCode='code ${DIR_PATH_FOR_WWW}/bitbucket/silence'
 alias silencePublic='cd ${DIR_PATH_FOR_WWW}/github/silence'
 alias silencePublicCode='code ${DIR_PATH_FOR_WWW}/github/silence'
 
-alias ragus='cd ${DIR_PATH_FOR_WWW}/bitbucket/ragus'
-alias ragusCode='code ${DIR_PATH_FOR_WWW}/bitbucket/ragus'
-alias ragusStorm='webstorm ${DIR_PATH_FOR_WWW}/bitbucket/ragus'
+alias ragus='cd ${DIR_PATH_FOR_WWW}/bitbucket/ragus-mvp'
+alias ragusCode='code ${DIR_PATH_FOR_WWW}/bitbucket/ragus-mvp'
+alias ragusStorm='webstorm ${DIR_PATH_FOR_WWW}/bitbucket/ragus-mvp'
 alias ragusRunScrape='cd ${DIR_PATH_FOR_WWW}/bitbucket/ragus && tsc && serverless invoke local --function scrape'
 alias ragusRunParse='cd ${DIR_PATH_FOR_WWW}/bitbucket/ragus  && tsc && serverless invoke local --function parse'
 

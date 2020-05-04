@@ -153,3 +153,36 @@ function tm-er {
   # Finished setup, attach to the tmux session!
   tmux attach-session -t $session
 }
+function tm-tc {
+  session="work"
+
+  # set up tmux
+  tmux start-server
+
+  # create a new tmux session, starting vim from a saved session in the new window
+  tmux new-session -d -s $session -n vim #"vim -S ~/.vim/sessions/kittybusiness"
+
+  # Select pane 1, set dir to TrueCompliance folder
+  tmux selectp -t 1
+  tmux send-keys "clear && cd ~/www/true-compliance/api && art serve --port=8080" C-m
+
+  # Split pane 1 horizontal by 75%, start monitoring
+  tmux splitw -v -p 65
+  tmux send-keys "clear && cd ~/www/true-compliance/processor && art serve --port=8090" C-m
+
+    # Split pane 1 horizontal by 75%, start monitoring
+  tmux splitw -v -p 50
+  tmux send-keys "clear && cd ~/www/true-compliance/document-reader && art serve --port=8070" C-m
+
+  # Select pane 1 - the first one which is ready for working.
+  tmux selectp -t 1
+
+  # create a new window called scratch
+  tmux new-window -t $session:1 -n scratch
+
+  # return to main vim window
+  tmux select-window -t $session:0
+
+  # Finished setup, attach to the tmux session!
+  tmux attach-session -t $session
+}
