@@ -84,7 +84,7 @@ POWERLEVEL9K_CUSTOM_HAPPY_SYMBOL_BACKGROUND="yellow"
 prompt_happy_symbol(){
   rand=$[$RANDOM % 12]
   case $rand in
-    0)  local symbol="🕊";;
+    0)  local symbol="🕊 ";;
     1)  local symbol="🦄";;
     2)  local symbol="🐕";;
     3)  local symbol="🐇";;

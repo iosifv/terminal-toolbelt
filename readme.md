@@ -1,4 +1,4 @@
-![silence](./screenshot/detail.png)
+![logo](./screenshot/detail.png)
 
 
 # Terminal Toolbelt
@@ -110,4 +110,4 @@ Double click on theme. Go to prefferences and click "default" once you make sure
 
 ## Screenshots
 
-![silence](./screenshot/general.png)
+![toolbelt](./screenshot/general.png)

@@ -96,18 +96,30 @@ function test-drive-speed {
   sudo hdparm -Tt /dev/sda
 }
 
-function phpStorm-reset-trial-v2019.2 {
+function phpStorm-reset-trial {
+  print-status 'v2019.1'
+  cd ~/.PhpStorm2019.1
+  rm -v config/eval/*.evaluation.key
+  sed -i '/evlsprt/d' config/options/*.xml
+
+  print-status 'v2019.2'
   cd ~/.PhpStorm2019.2
   rm -v config/eval/*.evaluation.key
   sed -i '/evlsprt/d' config/options/*.xml
-  cd ~/.java/.userPrefs/jetbrains
-  rm -rfv phpstorm
-}
 
-function phpStorm-reset-trial-v2019.3 {
+  print-status 'v2019.3'
   cd ~/.PhpStorm2019.3
   rm -v config/eval/*.evaluation.key
   sed -i '/evlsprt/d' config/options/*.xml
+
+  print-status 'v2020.1'
+  cd ~/.PhpStorm2020.1
+  rm -v ./.config/JetBrains/PhpStorm2020.1/eval/PhpStorm201.evaluation.key
+  rm -v ./.config/JetBrains/PhpStorm2020.1/eval/PhpStorm193.evaluation.key
+  rm -v config/eval/*.evaluation.key
+  sed -i '/evlsprt/d' config/options/*.xml
+
+  print-status 'userPrefs'
   cd ~/.java/.userPrefs/jetbrains
   rm -rfv phpstorm
 }
