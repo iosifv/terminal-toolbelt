@@ -167,12 +167,16 @@ function tm-tc {
   tmux send-keys "clear && cd ~/www/true-compliance/api && art serve --port=8080" C-m
 
   # Split pane 1 horizontal by 75%, start monitoring
-  tmux splitw -v -p 65
+  tmux splitw -v -p 75
   tmux send-keys "clear && cd ~/www/true-compliance/processor && art serve --port=8090" C-m
 
     # Split pane 1 horizontal by 75%, start monitoring
-  tmux splitw -v -p 50
+  tmux splitw -v -p 65
   tmux send-keys "clear && cd ~/www/true-compliance/document-reader && art serve --port=8070" C-m
+
+      # Split pane 1 horizontal by 75%, start monitoring
+  tmux splitw -v -p 65
+  tmux send-keys "clear && cd ~/www/true-compliance/web && art serve --port=8060" C-m
 
   # Select pane 1 - the first one which is ready for working.
   tmux selectp -t 1

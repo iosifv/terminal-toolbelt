@@ -79,3 +79,7 @@ function lsd {
         ((index++))
     done
 }
+
+function klear {
+    timeout 1 cmatrix -u 1 || clear
+}
