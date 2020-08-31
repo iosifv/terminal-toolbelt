@@ -61,7 +61,7 @@ alias tcProcessor='cd ${DIR_PATH_FOR_WWW}/true-compliance/processor'
 alias tcDocument='cd ${DIR_PATH_FOR_WWW}/true-compliance/document-reader'
 alias tcWeb='cd ${DIR_PATH_FOR_WWW}/true-compliance/web'
 alias tcCode='code ${DIR_PATH_FOR_WWW}/true-compliance/api'
-alias tcLogs='cd ~/www/true-compliance && multitail api/storage/logs/laravel.log -ci green -I document-reader/storage/logs/laravel.log -ci red -I processor/storage/logs/laravel.log -ci yellow -I reports/storage/logs/laravel.log -ci blue -I web/storage/logs/laravel.log'
+alias tcLogs='cd ~/www/true-compliance && multitail web/storage/logs/laravel.log -ci green -I document-reader/storage/logs/laravel.log -ci red -I processor/storage/logs/laravel.log -ci yellow -I reports/storage/logs/laravel.log -ci blue -I api/storage/logs/laravel.log'
 alias tcLogsClear='cd ~/www/true-compliance && echo "empty" > api/storage/logs/laravel.log && echo "empty" >  document-reader/storage/logs/laravel.log && echo "empty" > processor/storage/logs/laravel.log && echo "empty" > reports/storage/logs/laravel.log && echo "empty" > web/storage/logs/laravel.log'
 
 alias likeBumble='watch -n1 "xdotool mousemove 2900 1180 && xdotool click 1 && date"'

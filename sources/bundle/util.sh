@@ -112,12 +112,10 @@ function phpStorm-reset-trial {
   rm -v config/eval/*.evaluation.key
   sed -i '/evlsprt/d' config/options/*.xml
 
-  print-status 'v2020.1'
-  cd ~/.PhpStorm2020.1
-  rm -v ./.config/JetBrains/PhpStorm2020.1/eval/PhpStorm201.evaluation.key
-  rm -v ./.config/JetBrains/PhpStorm2020.1/eval/PhpStorm193.evaluation.key
-  rm -v config/eval/*.evaluation.key
-  sed -i '/evlsprt/d' config/options/*.xml
+  print-status 'v2020.x'
+  rm -rf ~/.config/JetBrains/PhpStorm*/eval
+  rm -rf ~/.java/.userPrefs/jetbrains/phpstorm
+  sed -i '/evlsprt/d' ~/.config/JetBrains/PhpStorm*/options/other.xml
 
   print-status 'userPrefs'
   cd ~/.java/.userPrefs/jetbrains
