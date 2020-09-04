@@ -94,16 +94,15 @@ function sshto-all-rigs {
   tmux send-keys "sshto-rig2" C-m
   tmux send-keys "miner" C-m
 
-  tmux splitw -v -p 65
+  tmux splitw -v -p 60
   tmux send-keys "sshto-rig3" C-m
-  tmux send-keys "miner" C-m
+#   tmux send-keys "miner" C-m
 
-#   tmux selectp -t 1
-  tmux splitw -v -p 45
+  tmux splitw -v -p 50
   tmux send-keys "sshto-rig4" C-m
   tmux send-keys "miner" C-m
 
-  tmux splitw -v -p 25
+  tmux splitw -h -p 50
   tmux send-keys "sshto-rig6" C-m
   tmux send-keys "miner" C-m
 
