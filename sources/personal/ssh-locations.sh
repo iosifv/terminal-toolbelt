@@ -25,8 +25,8 @@ alias sshto-rig2='ssh user@192.168.0.202'
 alias sshto-rig3='ssh user@192.168.0.203'
 alias sshto-rig4='ssh user@192.168.0.204'
 alias sshto-rig6='ssh user@192.168.0.206'
-alias sshto-rigs-update-babun='cd /home/Vigh/terminal-toolbelt || git remote update || git pull origin master'
-alias sshto-rigs-update-ubuntu='cd /home/vigh54/terminal-toolbelt || git remote update || git pull origin master'
+alias sshto-rigs-update-babun='cd /home/Vigh/terminal-toolbelt && git remote update && git pull origin master'
+alias sshto-rigs-update-ubuntu='cd /home/vigh54/terminal-toolbelt && git remote update && git pull origin master'
 alias sshto-rigs-copy-id='ssh-copy-id user@192.168.0.201 && \
                             ssh-copy-id user@192.168.0.202 && \
                             ssh-copy-id user@192.168.0.203 && \
