@@ -76,6 +76,7 @@ function tm-rigs {
 }
 
 function sshto-all-rigs {
+    tmux kill-session
   session="rigs4"
 
   # set up tmux
@@ -89,18 +90,20 @@ function sshto-all-rigs {
   tmux send-keys "sshto-rig1" C-m
   tmux send-keys "miner" C-m
 
-  tmux splitw -v -p 65
+  tmux splitw -v -p 80
   tmux send-keys "sshto-rig2" C-m
+  tmux send-keys "miner" C-m
 
-  tmux splitw -v -p 50
+  tmux splitw -v -p 60
   tmux send-keys "sshto-rig3" C-m
   tmux send-keys "miner" C-m
 
 #   tmux selectp -t 1
+  tmux splitw -v -p 40
   tmux send-keys "sshto-rig4" C-m
   tmux send-keys "miner" C-m
 
-  tmux splitw -v -p 65
+  tmux splitw -v -p 25
   tmux send-keys "sshto-rig6" C-m
   tmux send-keys "miner" C-m
 
