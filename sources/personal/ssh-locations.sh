@@ -41,7 +41,7 @@ function tm-rigs {
   # create a new tmux session, starting vim from a saved session in the new window
   tmux new-session -d -s $session -n vim
   
-  tmux selectp -t 1
+#   tmux selectp -t 1
   tmux splitw -h -p 50
   tmux send-keys "sshto-rig2" C-m
   tmux send-keys "miner" C-m
