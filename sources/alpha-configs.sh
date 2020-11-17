@@ -14,6 +14,7 @@ DEFAULT_USER=`whoami`
 # alias composer="php /usr/local/Cellar/composer/1.8.4/bin/composer"
 export PATH="$PATH:/usr/local/bin"
 export PATH=/home/iosif/.composer/vendor/bin:$PATH
+export PATH=/Users/iosif/.composer/vendor/bin:$PATH
 export PATH=$PATH:~/bin
 
 # export TERM="xterm-256color"

@@ -30,6 +30,8 @@ if [[ "${OS_NAME}" == "osx" ]]; then
     can-i-haz-greeting
     can-i-haz-quote
     echo ""
+
+    crypto-status-price
 fi
 
 

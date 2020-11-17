@@ -79,7 +79,11 @@ just replace the default theme "robbyrussel" with "agnoster"
 nano ~/.zshrc
 ```
 
-##### Install Powerlevel9k Theme for oh-my-zsh
+##### Install Powerlevel10k Theme for oh-my-zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+
+##### Install Powerlevel9k Theme for oh-my-zsh DEPRECATED
 https://github.com/bhilburn/powerlevel9k
 https://github.com/bhilburn/powerlevel9k/wiki/Install-Instructions#step-1-install-powerlevel9k
 

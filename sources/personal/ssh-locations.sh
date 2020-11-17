@@ -76,8 +76,8 @@ function tm-rigs {
 }
 
 function sshto-all-rigs {
-    tmux kill-session
-  session="rigs4"
+  tmux kill-session
+  session="rigs"
 
   # set up tmux
   tmux start-server
@@ -85,8 +85,6 @@ function sshto-all-rigs {
   # create a new tmux session, starting vim from a saved session in the new window
   tmux new-session -d -s $session -n vim
   
-#   tmux splitw -h -p 50
-#   tmux selectp -t 1
   tmux send-keys "sshto-rig1" C-m
   tmux send-keys "miner" C-m
 
@@ -105,7 +103,6 @@ function sshto-all-rigs {
   tmux splitw -h -p 50
   tmux send-keys "sshto-rig6" C-m
   tmux send-keys "miner" C-m
-
 
   tmux selectp -t 5 # The Empty Window...
 

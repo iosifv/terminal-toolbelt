@@ -170,10 +170,15 @@ function tm-tc {
   tmux splitw -v -p 75
   tmux send-keys "clear && cd ~/www/true-compliance/processor && art serve --port=8090" C-m
 
+
     # Split pane 1 horizontal by 75%, start monitoring
   tmux splitw -v -p 65
+  tmux send-keys "clear && cd ~/www/true-compliance/document-reader && art queue:work --tries=1 --timeout=1800" C-m
+  
+      # Split pane 1 horizontal by 75%, start monitoring
+  tmux splitw -h -p 65
   tmux send-keys "clear && cd ~/www/true-compliance/document-reader && art serve --port=8070" C-m
-
+  
       # Split pane 1 horizontal by 75%, start monitoring
   tmux splitw -v -p 65
   tmux send-keys "clear && cd ~/www/true-compliance/web && art serve --port=8060" C-m
