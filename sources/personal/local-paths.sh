@@ -9,6 +9,8 @@ function tb-help-local-paths {
 alias www='cd ${DIR_PATH_FOR_WWW}'
 alias bitbucket='cd ${DIR_PATH_FOR_WWW}/bitbucket'
 alias github='cd ${DIR_PATH_FOR_WWW}/github'
+alias bitbucketCode='code ${DIR_PATH_FOR_WWW}/bitbucket'
+alias githubCode='code ${DIR_PATH_FOR_WWW}/github'
 alias drive='cd ${DIR_PATH_FOR_WWW}/../Drive'
 
 ### Personal projects ###

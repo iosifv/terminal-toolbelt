@@ -98,9 +98,25 @@ POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='grey'
 #     happy_symbol context custom_battery_status_joined custom_internet_signal ram load ssh root_indicator dir dir_writable vcs)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time background_jobs status)
 
+
+
+
+
+# Todo: add signal test only on battery
+
+
+
+
+######## OSX
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-    happy_symbol context ram load ssh root_indicator dir dir_writable vcs)
+    happy_symbol prompt_zsh_internet_signal context custom_battery_status_joined custom_internet_signal ram load ssh root_indicator dir dir_writable vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time background_jobs status)
+
+
+######## Linux
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+#     happy_symbol context ram load ssh root_indicator dir dir_writable vcs)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time background_jobs status)
 
 HIST_STAMPS="mm/dd/yyyy"
 DISABLE_UPDATE_PROMPT=true
