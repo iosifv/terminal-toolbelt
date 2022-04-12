@@ -21,7 +21,7 @@ cp loader.sh_TEMPLATE loader.sh
 nano loader.sh
 ```
 
-##### Source the launcer in your rc file (may differ)
+##### Source the launcher in your rc file (may differ)
 
 ```bash
 nano ~/.bashrc

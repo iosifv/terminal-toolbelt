@@ -30,8 +30,8 @@ function ghelp {
 
 # Git pulls a certain branch
 function gtake {
-  git checkout $1
   git remote update
+  git checkout $1
   git pull origin $1
   echo "${C_YELLOW}====================================="
   git status

@@ -71,4 +71,4 @@ alias ltail='llog'
 # Fastest
 #----------------------------
 alias fastest='fastest --xml=phpunit.xml'
-alias vapor=' ~/.config/composer/vendor/bin/vapor'
+alias vapor=' ~/.composer/vendor/bin/vapor'

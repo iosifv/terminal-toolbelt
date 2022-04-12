@@ -18,7 +18,9 @@ function tb-help-util {
 alias json-pretty-print='python -m json.tool'
 alias json-pretty-color='pygmentize -l json'
 
-alias show-my-ip='curl -4 icanhazip.com'
+alias show-my-ip='curl icanhazip.com'
+alias show-my-ip-v4='curl -4 icanhazip.com'
+alias show-my-ip-v6='curl -6 icanhazip.com'
 alias show-my-ip-detailed='curl ifconfig.co/json --silent | json-pretty-print | json-pretty-color'
 
 function internet-ping {

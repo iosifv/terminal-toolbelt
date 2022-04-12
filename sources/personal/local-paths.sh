@@ -12,6 +12,8 @@ alias github='cd ${DIR_PATH_FOR_WWW}/github'
 alias bitbucketCode='code ${DIR_PATH_FOR_WWW}/bitbucket'
 alias githubCode='code ${DIR_PATH_FOR_WWW}/github'
 alias drive='cd ${DIR_PATH_FOR_WWW}/../Drive'
+alias web3='cd ${DIR_PATH_FOR_WWW}/bitbucket/web3'
+alias web3Code='code ${DIR_PATH_FOR_WWW}/bitbucket/web3'
 
 ### Personal projects ###
 #----------------------------
@@ -56,15 +58,6 @@ alias start-homestead='cd ${DIR_PATH_FOR_WWW}/soft/Homestead/ && vagrant reload 
 ### Work folders ###
 #----------------------------
 alias tc='cd ${DIR_PATH_FOR_WWW}/true-compliance'
-alias tcStart='tm-tc'
-alias api='cd ${DIR_PATH_FOR_WWW}/true-compliance/api'
-alias reports='cd ${DIR_PATH_FOR_WWW}/true-compliance/reports'
-alias processor='cd ${DIR_PATH_FOR_WWW}/true-compliance/processor'
-alias reader='cd ${DIR_PATH_FOR_WWW}/true-compliance/reader'
-alias web='cd ${DIR_PATH_FOR_WWW}/true-compliance/web'
-alias tcCode='code ${DIR_PATH_FOR_WWW}/true-compliance'
-alias tcLogs='cd ~/www/true-compliance && multitail api/storage/logs/laravel.log -ci green -I reader/storage/logs/laravel.log -ci red -I processor/storage/logs/laravel.log -ci yellow -I reports/storage/logs/laravel.log -ci blue -I web/storage/logs/laravel.log'
-alias tcLogsClear='cd ~/www/true-compliance && echo "empty" > api/storage/logs/laravel.log && echo "empty" >  reader/storage/logs/laravel.log && echo "empty" > processor/storage/logs/laravel.log && echo "empty" > reports/storage/logs/laravel.log && echo "empty" > web/storage/logs/laravel.log'
 
 alias likeBumble='watch -n1 "xdotool mousemove 2900 1180 && xdotool click 1 && date"'
 alias likeTinder='watch -n1 "xdotool mousemove 2860 1000 && xdotool click 1 && date"'

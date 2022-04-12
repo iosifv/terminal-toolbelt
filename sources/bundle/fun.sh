@@ -83,3 +83,5 @@ function lsd {
 function klear {
     timeout 1 cmatrix -u 1 || clear
 }
+
+alias cmatrix='cmatrix -b'

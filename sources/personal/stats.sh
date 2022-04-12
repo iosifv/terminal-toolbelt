@@ -27,8 +27,10 @@ function crypto-status-minimal {
 }
 
 function crypto-status-price {
-    echo "Bitcoin: $(cointop price --coin bitcoin --currency EUR)"
-    echo "Tezos:   $(cointop price --coin tezos --currency EUR)"
+    echo "Bitcoin:  $(cointop price --coin bitcoin --currency USD)"
+    echo "Ethereum: $(cointop price --coin ethereum --currency USD)"
+    echo "Polkadot: $(cointop price --coin polkadot --currency EUR)"
+    echo "Tezos:    $(cointop price --coin tezos --currency EUR)"
 }
 
 function crypto-status-long {
